@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+  <head>
+    <title>Argumentos</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Daniela Serrano Campos" />
+    <meta name="date" content="2024-11-08" />
+    <script src="site_libs/header-attrs-2.29/header-attrs.js"></script>
+    <link href="site_libs/remark-css-0.0.1/default.css" rel="stylesheet" />
+    <link href="site_libs/remark-css-0.0.1/rladies.css" rel="stylesheet" />
+    <link href="site_libs/remark-css-0.0.1/rladies-fonts.css" rel="stylesheet" />
+  </head>
+  <body>
+    <textarea id="source">
+
+
+
+
+class: title-slide, middle, center
+background-image: url(figures/Clases_Rladies_Slide1.png) 
+background-position: 90% 75%, 75% 75%, center
+background-size: 1210px,210px, cover
+
+# Argumentos
+----
+## **¿Qué y cómo son?**
+### Daniela Serrano Campos
+### 11/08/24
+
+---
+name: hola
+class: inverse, middle, center
+
+
+# ¿Cómo argumentar?  
+
+## Gerring (2014)
+
+
+???
+Se presenta un resumen de los capítulo 2 de Gerring (2014).
+
+---
+class: inverse, middle
+.pull.center[
+# Elementos de definición
+]
+.pull.center[
+**Es lo que especulamos que podría ser verdadero sobre el mundo.** 
+]  
+&lt;br&gt;  
+1. Conceptos clave
+2. Hipótesis que se pueden poner a prueba
+3. Modelo formal o marco teórico
+4. Mecanismos causales (para argumentos causales)
+
+---
+class: middle
+
+# Tipos de argumento según nivel de abstracción
+
+&lt;br&gt;  
+1. Paradigmas o marcos teóricos
+2. Modelos
+3. Hipótesis
+
+???
+Mucha fluidez termonológica en este campo semántico
+---
+&lt;h2 style="text-align: center;"&gt;Propuesta de un marco unificado (Gerring 2014)&lt;/h2&gt;
+
+| **#** | **Criterio**      | **Descripción**                                                                 |
+|-------|--------------------|---------------------------------------------------------------------------------|
+| **1** | **Verdad**         | (precisión, validez, veracidad) &lt;br&gt; ¿Es verdadero?                              |
+| **2** | **Precisión**      | (especificidad) &lt;br&gt; ¿Es preciso?                                                |
+| **3** | **Generalidad**    | (extensión, dominio, población, rango, amplitud) &lt;br&gt; ¿Cuán amplio es su rango? &lt;br&gt; ¿Cuántos fenómenos describe/explica una teoría? |
+| **4** | **Delimitación**   | (condiciones de alcance) &lt;br&gt; ¿Cuán acotado está?                                 |
+| **5** | **Parsimonia**     | (concisión, economía, la navaja de Ockham, reducción, simplicidad) &lt;br&gt; ¿Cuán parsimonioso es? &lt;br&gt; ¿Cuántos supuestos se requieren? |
+
+
+.footnote[
+----
+                                                  Gerring (2014, p.81).]                                                                        
+---
+
+&lt;h2 style="text-align: center;"&gt;Propuesta de un marco unificado (Gerring 2014)&lt;/h2&gt;
+
+| **#** | **Criterio**      | **Descripción**                                                                 |
+|-------|--------------------|---------------------------------------------------------------------------------|
+| **6** | **Coherencia**     | (claridad, consistencia; antónimo: ambigüedad) &lt;br&gt; ¿Cuán coherente es?           |
+| **7** | **Conmensurabilidad** | (consiliencia, armonía, economía lógica, utilidad teórica; que no sea ad hoc) &lt;br&gt; ¿Cómo se combina con otras inferencias? &lt;br&gt; ¿Promueve la economía lógica en un campo? |
+| **8** | **Relevancia**     | (importancia cotidiana, significación) &lt;br&gt; ¿Cuán relevante es para cuestiones que preocupan a los ciudadanos y los diseñadores de políticas? |
+
+.footnote[
+----
+                                                  Gerring (2014, p.81).]    
+---
+name: adios
+class: middle, inverse
+
+.pull-left[
+# **¡Gracias!**
+&lt;br/&gt;
+## Gracias a R-Ladies Xalapa  
+
+### Por promover la diversidad de género en la comunidad de R
+
+]
+
+
+
+???
+¡Gracias por tu atención! 
+
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script>var slideshow = remark.create({
+"highlightStyle": "github",
+"highlightLines": true,
+"countIncrementalSlides": false,
+"ratio": "4:3"
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+// add `data-at-shortcutkeys` attribute to <body> to resolve conflicts with JAWS
+// screen reader (see PR #262)
+(function(d) {
+  let res = {};
+  d.querySelectorAll('.remark-help-content table tr').forEach(tr => {
+    const t = tr.querySelector('td:nth-child(2)').innerText;
+    tr.querySelectorAll('td:first-child .key').forEach(key => {
+      const k = key.innerText;
+      if (/^[a-z]$/.test(k)) res[k] = t;  // must be a single letter (key)
+    });
+  });
+  d.body.setAttribute('data-at-shortcutkeys', JSON.stringify(res));
+})(document);
+(function() {
+  "use strict"
+  // Replace <script> tags in slides area to make them executable
+  var scripts = document.querySelectorAll(
+    '.remark-slides-area .remark-slide-container script'
+  );
+  if (!scripts.length) return;
+  for (var i = 0; i < scripts.length; i++) {
+    var s = document.createElement('script');
+    var code = document.createTextNode(scripts[i].textContent);
+    s.appendChild(code);
+    var scriptAttrs = scripts[i].attributes;
+    for (var j = 0; j < scriptAttrs.length; j++) {
+      s.setAttribute(scriptAttrs[j].name, scriptAttrs[j].value);
+    }
+    scripts[i].parentElement.replaceChild(s, scripts[i]);
+  }
+})();
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+// adds .remark-code-has-line-highlighted class to <pre> parent elements
+// of code chunks containing highlighted lines with class .remark-code-line-highlighted
+(function(d) {
+  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
+  const preParents = [];
+  const findPreParent = function(line, p = 0) {
+    if (p > 1) return null; // traverse up no further than grandparent
+    const el = line.parentElement;
+    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
+  };
+
+  for (let line of hlines) {
+    let pre = findPreParent(line);
+    if (pre && !preParents.includes(pre)) preParents.push(pre);
+  }
+  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
+})(document);</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>
