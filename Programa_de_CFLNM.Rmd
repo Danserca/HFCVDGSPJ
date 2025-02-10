@@ -1,0 +1,289 @@
+---
+title: "Recursos"
+date: "`r format(Sys.Date(), '%d de %B de %Y')`"
+output:
+  html_document:
+    toc: true
+    toc_float: true
+    collapsed: false
+    number_sections: false
+    toc_depth: 1
+    theme: spacelab
+    #code_folding: hide
+---
+<style type="text/css">
+
+/* Navbar Styles */
+.navbar {
+  background-color:  #00BFB3 !important; /* Background color of the navbar */
+  border-color:  #0077C8 !important; /* Border color of the navbar */
+  background-image: none !important; /* Removes any background image */
+  height: 65px; /* Sets navbar height */
+}
+
+/* Navbar Link Styles */
+.navbar-default .navbar-nav > li > a {
+  color: #FFFFFF !important;  /* Text color for links */
+  font-weight: bold !important; /* Bold text */
+}
+
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+  color:  #00BFB3 !important; /* Hover and focus text color */
+  font-weight: bold; /* Keeps text bold on hover/focus */
+}
+
+/* Navbar Collapse Menu Styles */
+.navbar-collapse {
+  background-color:  #00BFB3 !important; /* Background color for the collapsed navbar */
+}
+
+/* Dropdown Menu Link Styles */
+.navbar-nav > li > a {
+  color: #D8CEFF; /* Text color for dropdown links */
+  font-weight: bold;
+  padding: 10px 15px; /* Padding for dropdown links */
+}
+
+.navbar-nav > li > a:hover,
+.navbar-nav > li > a:focus,
+.navbar-nav > .active > a {
+  background-color: #D8CEFF; /* Background color on hover/active */
+  color: #FFFFFF; /* Text color on hover/active */
+}
+
+/* Active List Group Item Styles */
+.list-group-item.active,
+.list-group-item.active:focus,
+.list-group-item.active:hover {
+  z-index: 2;
+  color:  #00BFB3; /* Text color for active list item */
+  background-color: #E4D0EF; /* Background color for active list item */
+  border-color:  #00BFB3; /* Border color for active list item */
+}
+
+/* Title, Subtitle, Author, and Date Styles */
+h1.title {
+  color: #003057; /* Color for title */
+}
+
+h4.subtitle {
+  color: #003057; /* Color for subtitle */
+}
+
+h5.author {
+  color: #003057; /* Color for author */
+}
+
+h5.date {
+  color: #8B5F65; /* Color for date */
+}
+
+/* Hyperlink Styles */
+a {
+  color: #003057; /* Text color for hyperlinks */
+  text-decoration: none; /* Removes underline from hyperlinks */
+}
+
+a:hover {
+  color: #005a9c; /* Color when hovering over hyperlinks */
+  text-decoration: underline; /* Underlines text when hovering over hyperlinks */
+}
+
+a:visited {
+  color: #6C4F56; /* Color for visited hyperlinks */
+}
+
+a:active {
+  color: #4A2C31; /* Color for active hyperlinks (while clicking) */
+}
+
+</style>
+
+
+
+<div style="color:#8B5F65;">
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(message=FALSE,warning=FALSE, cache=TRUE)
+```
+**Nota:** Este sitio es colaborativo y está en construcción continua, envíanos tus propuestas de contenido: videos, tutoriales, materiales, libros, reseñas.
+
+
+### Información 
+
+- **Elaboró:** Dra. Daniela Serrano Campos
+- **Email:** [daniela.serrano@inegi.org.mx](mailto:daniela.serrano@inegi.org.mx) (por favor pon ‘HFACVDG’ en el asunto)
+
+
+# Descripción general y objetivos del Hub
+
+2024 | 8 | 07 Última actualización: `r Sys.Date()`
+
+Este sitio provee de herramientas, guías, manuales y recursos para la visualización y comunicación efectiva y ciudadada de datos de gobierno. 
+
+
+# Objetivos
+
+- Programación básica en R: uso de variables, paquetes, espacios de trabajo...  
+- Transformación de datos: procesamiento de archivos de datos para un análisis deseado.  
+- Visualización de datos: representación gráfica.  
+- Comunicación de la investigación: cómo utilizar los scripts de R Markdown para crear manuscritos correctamente referenciados para comunicar la investigación.  
+- Investigación reproducible: principios de la ciencia abierta, incluidas herramientas para compartir datos, compartir manuscritos, diseños de investigación, compartir métodos.
+
+# ¿Cómo seleccionar la gráfica adecuada para tu análisis?
+## 🌟 Data to Viz: Guía para la Visualización de Datos  
+
+**Data to Viz** es una herramienta que clasifica los tipos de gráficos según el formato de los datos de entrada. Utiliza un árbol de decisión que orienta hacia las visualizaciones más adecuadas para representar un conjunto de datos.  
+
+📌 **Principios clave:**  
+1️⃣ La mayoría de los análisis de datos pueden resumirse en unos veinte formatos de dataset.  
+2️⃣ Tanto los datos como su contexto determinan el gráfico adecuado.  
+
+🔍 **Método sugerido:** Identificar y probar todas las visualizaciones viables para elegir la mejor opción.  
+
+💡 *data-to-viz.com* ayuda a seleccionar el mejor gráfico, señala errores comunes y proporciona código reproducible en R.  
+
+🚀 Aunque el mundo de la dataviz es infinito, este proyecto es un excelente punto de partida.  
+
+<style>
+  .custom-img {
+    max-width: 400px; /* Ajusta según lo que prefieras */
+    width: 100%;
+    margin: 10px auto; /* Añade un poco de espacio alrededor */
+    display: block; /* Asegura que la imagen no tenga alineaciones extrañas */
+  }
+</style>
+<div class="full-width text-center">
+  <a href="https://www.data-to-viz.com/#explore" target="_blank">
+    <img src="images/from_Data_to_vis.png" class="img-fluid custom-img">
+  </a>
+</div>
+
+
+# Lecturas 
+
+- [Bunge, M. (2000). La Investigación científica su estrategia y su filosofía. Barcelona: S.XXI.](https://archive.org/details/BungeMarioLaInvestigacionCientificaSuEstrategiaYSuFilosofia)  
+- [Martínez Valdes, Gustavo AND Huerta Silva, José Luis AND Lara Escalante, Mónica (2024). Gestión de la información para el análisis político. México: UNAM-FCPyS.](http://ciid.politicas.unam.mx/www/libros/9786073089791.pdf)  
+- [Gerring, J. (2014). Metodología de las ciencias sociales. Madrid: Alianza](https://drive.google.com/file/d/1aUmK4HqTD43-4TtpYcxLaQVdkULHtZeB/view?usp=sharing).  
+- [Guía definitiva para todo lo relacionado con R Markdown (la encontrarás muy útil a medida que mejores en esta habilidad](https://bookdown.org/yihui/rmarkdown/).    
+
+<!-- ### third level header -->
+
+<!-- Here's an even lower level header -->
+
+<!-- # My second post (note the order) -->
+
+<!-- 2018 | 7 | 23 Last compiled: `r Sys.Date()` -->
+
+<!-- I'm writing this tutorial going from the top down. And, this is how it will be printed. So, notice the second post is second in the list. If you want your most recent post to be at the top, then make a new post starting at the top. If you want the oldest first, do, then keep adding to the bottom -->
+
+# Iremos agregando material de R, como el que se muestra:
+
+Tal vez quieras tomar una muestra de 100 números de una distribución normal con media = 0 y desviación estándar = 1, y luego quieres trazar un histograma. Puedes hacer esto aquí mismo usando un bloque de código r, como este:
+
+
+```{r}
+muestras <- rnorm(100, mean=0, sd=1)
+hist(muestras)
+```
+
+<!-- When you knit this R Markdown document, you will see that the histogram is printed to the page, along with the R code. This document can be set up to hide the R code in the webpage, just delete the comment (hashtag), from the cold folding option in the yaml header up top. For purposes of letting yourself see the code, and me see the code, best to keep it the way that it is. You learn all of these things and more can be customized in each R code block. -->
+
+<!-- # The big idea -->
+
+<!-- Use this lab journal to record what you do in R. This way I will be able to see what you are doing and help you along the way. You will also be creating a repository of all the things you do. You can make posts about everything. Learning specific things in R (project unrelated), and doing things for the project that we will discuss at the beginning of the Fall semester. You can get started now by fiddling around with googling things, and trying stuff out in R. I've placed some helpful starting links in the links page on this website -->
+
+<!-- # What can you do right now by yourself? -->
+
+<!-- It's hard to learn programming when you don't have specific problems that you are trying to solve. Everything just seems abstract. -->
+
+<!-- I wrote an [introductory programming book that introduces R](https://crumplab.github.io/programmingforpsych/), and gives some [concrete problems for you to solve](https://crumplab.github.io/programmingforpsych/programming-challenges-i-learning-the-fundamentals.html).  -->
+
+<!-- To get the hang of journaling and solving the problems to learn programming, my suggestion is that you use this .Rmd file to solve the problems. It would look like this: -->
+
+<!-- # Problem 1 -->
+
+<!-- Do simple math with numbers, addition, subtraction, multiplication, division -->
+
+<!-- ```{r} -->
+<!-- 1+2 -->
+<!-- 2*5 -->
+<!-- 5/3 -->
+<!-- (1+6+4)/5 -->
+
+<!-- ``` -->
+
+<!-- # Problem 2 -->
+
+<!-- Put numbers into variables, do simple math on the variables -->
+
+<!-- ```{r} -->
+<!-- a<-1 -->
+<!-- b<-2 -->
+<!-- a+b -->
+
+<!-- d<-c(1,2,3) -->
+<!-- e<-c(5,6,7) -->
+<!-- d+e -->
+<!-- d*e -->
+<!-- d/e -->
+
+<!-- ``` -->
+
+<!-- # Problem 3 -->
+
+<!-- Write code that will place the numbers 1 to 100 separately into a variable using for loop. Then, again using the seq function. -->
+
+<!-- ```{r} -->
+<!-- # for loop solution -->
+<!-- # i becomes the number 1 to 100 at each step of the loop -->
+
+
+<!-- a <- length(100) # make empty variable, set length to 100 -->
+<!-- for (i in 1:100){ -->
+<!--   a[i] <-i #assigns the number in i, to the ith index of a -->
+<!-- } -->
+
+<!-- print(a) -->
+
+<!-- # for loop solution #2 -->
+
+<!-- a<-c() #create empty variable using combine command -->
+<!-- for (i in 1:100){ -->
+<!--   a<-c(a,i) # keeps combining a with itself and the new number in i -->
+<!-- } -->
+<!-- print(a) -->
+
+<!-- # seq solution -->
+<!-- a <- seq(1,100,1) # look up help for seq using ?seq() in console -->
+<!-- print(a) -->
+
+<!-- ``` -->
+
+<!-- # Replace this with problem 4 -->
+
+<!-- And keep going. Try to solve the problems with different scripts that provide the same solution. Good luck, Happy coding. -->
+
+# Comentarios y dudas:
+
+
+<div id="disqus_thread"></div>
+<script>
+    /**
+    *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+    *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+    /*
+    var disqus_config = function () {
+    this.page.url = https://danserca.github.io/Consulta-de-Fuentes-y-Lectura-Numerica-del-Mundo-con-R/index.html;  // Replace PAGE_URL with your page's canonical URL variable
+    this.page.identifier = CFLNM_0032_2025; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+    */
+    (function() { // DON'T EDIT BELOW THIS LINE
+    var d = document, s = d.createElement('script');
+    s.src = 'https://cflnm2024-0032-disqus-com.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

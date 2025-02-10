@@ -1,0 +1,159 @@
+---
+title: "Comunicación escrita ciudadana efectiva"
+date: "`r format(Sys.Date(), '%d de %B de %Y')`"
+output:
+  html_document:
+    toc: true
+    toc_float: true
+    collapsed: false
+    number_sections: false
+    toc_depth: 1
+    theme: spacelab
+    #code_folding: hide
+---
+
+<style type="text/css">
+
+/* Navbar Styles */
+.navbar {
+  background-color:  #00BFB3 !important; /* Background color of the navbar */
+  border-color:  #0077C8 !important; /* Border color of the navbar */
+  background-image: none !important; /* Removes any background image */
+  height: 65px; /* Sets navbar height */
+}
+
+/* Navbar Link Styles */
+.navbar-default .navbar-nav > li > a {
+  color: #FFFFFF !important;  /* Text color for links */
+  font-weight: bold !important; /* Bold text */
+}
+
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+  color: #00BFB3 !important; /* Hover and focus text color */
+  font-weight: bold; /* Keeps text bold on hover/focus */
+}
+
+/* Navbar Collapse Menu Styles */
+.navbar-collapse {
+  background-color: #00BFB3 !important; /* Background color for the collapsed navbar */
+}
+
+/* Dropdown Menu Link Styles */
+.navbar-nav > li > a {
+  color: #FFFFFF; /* Text color for dropdown links */
+  font-weight: bold;
+  padding: 10px 15px; /* Padding for dropdown links */
+}
+
+.navbar-nav > li > a:hover,
+.navbar-nav > li > a:focus,
+.navbar-nav > .active > a {
+  background-color:#D8CEFF; /* Background color on hover/active */
+  color: #FFFFFF; /* Text color on hover/active */
+}
+
+/* Active List Group Item Styles */
+.list-group-item.active,
+.list-group-item.active:focus,
+.list-group-item.active:hover {
+  z-index: 2;
+  color: #00BFB3; /* Text color for active list item */
+  background-color: #E4D0EF; /* Background color for active list item */
+  border-color: #00BFB3; /* Border color for active list item */
+}
+
+/* Title, Subtitle, Author, and Date Styles */
+h1.title {
+  color:  #003057; /* Color for title */
+}
+
+h4.subtitle {
+  color:  #003057; /* Color for subtitle */
+}
+
+h5.author {
+  color:  #003057; /* Color for author */
+}
+
+h5.date {
+  color: #00BFB3; /* Color for date */
+}
+
+
+/* Hyperlink Styles */
+a {
+  color: #582C35; /* Text color for hyperlinks */
+  text-decoration: none; /* Removes underline from hyperlinks */
+}
+
+a:hover {
+  color: #005a9c; /* Color when hovering over hyperlinks */
+  text-decoration: underline; /* Underlines text when hovering over hyperlinks */
+}
+
+a:visited {
+  color: #6C4F56; /* Color for visited hyperlinks */
+}
+
+a:active {
+  color: #4A2C31; /* Color for active hyperlinks (while clicking) */
+}
+
+
+/* Cambia el color del cuerpo del texto */
+body {
+  color: #2E3A46 !important; /* Un gris oscuro para mejorar la lectura */
+}
+
+/* Cambia el color de los párrafos */
+p {
+  color: #354A5F !important; /* Azul-grisáceo más claro */
+}
+
+/* Cambia el color del texto en listas */
+ul li {
+  color: #005a9c !important; /* Azul más fuerte */
+}
+
+</style>
+
+<div style="color:#8B5F65;">
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(message=FALSE,warning=FALSE, cache=TRUE)
+```
+**Nota:** Iremos incluyendo los materiales que nos compartan.
+
+
+# 1. Guía de buenas prácticas en escritura
+
+#### ¿Por qué es importante comunicar datos en lenguaje ciudadano?  
+Generamos datos con base en métodos científicos y buenas prácticas. La escritura es una de las formas más comunes de comunicación en la ciencia, pero quienes se dedican a la investigación tienen fama de no escribir con claridad. ¿Por qué sucede esto? Una posible razón es que rara vez reciben formación específica en escritura. Comunicar con claridad tiene grandes beneficios: fortalece la colaboración y reduce la brecha entre las oficinas nacionales de estadística y la sociedad.
+
+#### [**Scientific Writing Resource**](https://sites.duke.edu/scientificwriting/)  
+El **Scientific Writing Resource** es un curso en línea diseñado para enseñar a escribir de manera efectiva. No se enfoca en la corrección gramatical o de puntuación, sino en comunicar con claridad la intención de quien escribe. Aunque está en inglés y dirigido a personas que cursan posgrados en ciencias, puede traducirse y utilizarse de manera autodidacta.
+
+Las lecciones pueden completarse en unos 45 minutos. Basta con leer los materiales y ejemplos, y luego practicar con los ejercicios.  
+
+#### Comunicar de manera efectiva  
+El objetivo de la escritura es la comunicación. Estas lecciones no establecen reglas absolutas, sino principios basados en la perspectiva de la persona que lee. Se inspiran en las ideas de Joseph Williams y George Gopen, quienes sostienen que, si comprendes lo que las lectoras esperan, puedes cumplir con esas expectativas y mejorar tu comunicación escrita.  
+
+La clave del éxito en la escritura está en la **revisión inteligente**. Al principio, considera estos principios como guías para revisar tu trabajo. Con la práctica, se integrarán naturalmente en tu proceso de escritura.  
+
+Este recurso se centra en la **escritura científica**, no en la divulgación científica. ¿Cuál es la diferencia? Descúbrelo en la primera lección.  
+
+[Duke Graduate School Scientific Writing Resource](https://sites.duke.edu/scientificwriting/) 
+
+### Las 6 reglas de Orwell  
+
+1. Nunca uses una metáfora, comparación u otra figura retórica que estés acostumbrado a ver impresa.  
+2. Nunca uses una palabra larga cuando una corta sea suficiente.  
+3. Si es posible eliminar una palabra, elimínala siempre.  
+4. Nunca uses la voz pasiva cuando puedas usar la activa.  
+5. Nunca uses una frase extranjera, una palabra científica o un término técnico si puedes pensar en un equivalente en español cotidiano.  
+6. Rompe cualquiera de estas reglas antes de decir algo completamente bárbaro.  
+
+<br><br>
+
+

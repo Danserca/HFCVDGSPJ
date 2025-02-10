@@ -1,0 +1,19 @@
+name: "HFCVDG"
+navbar:
+  title: "HFCVDG"
+  left:
+    - text: "Inicio"
+      href: index.html
+    - text: "Data vis"
+      href: Programa_de_CFLNM.html
+    - text: "Comunicación efectiva"
+      href: Clases.html
+    - text: "Glosario"
+      href: Glosario.html
+    - text: "Aviso de responsabilidad"
+      href: Disclamer.html
+    # - text: "Links"
+    #   href: Links.html
+    # - text: "Primera unidad"
+    #   href: Journal2.html
+output_dir: "docs"

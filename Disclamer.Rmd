@@ -1,0 +1,108 @@
+---
+title: "Aviso de responsabilidad"
+output: html_document
+---
+
+<style type="text/css">
+
+/* Navbar Styles */
+.navbar {
+  background-color:  #00BFB3 !important; /* Background color of the navbar */
+  border-color:  #0077C8 !important; /* Border color of the navbar */
+  background-image: none !important; /* Removes any background image */
+  height: 65px; /* Sets navbar height */
+}
+
+/* Navbar Link Styles */
+.navbar-default .navbar-nav > li > a {
+  color: #FFFFFF !important;  /* Text color for links */
+  font-weight: bold !important; /* Bold text */
+}
+
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+  color:  #00BFB3 !important; /* Hover and focus text color */
+  font-weight: bold; /* Keeps text bold on hover/focus */
+}
+
+/* Navbar Collapse Menu Styles */
+.navbar-collapse {
+  background-color:  #00BFB3 !important; /* Background color for the collapsed navbar */
+}
+
+/* Dropdown Menu Link Styles */
+.navbar-nav > li > a {
+  color: #D8CEFF; /* Text color for dropdown links */
+  font-weight: bold;
+  padding: 10px 15px; /* Padding for dropdown links */
+}
+
+.navbar-nav > li > a:hover,
+.navbar-nav > li > a:focus,
+.navbar-nav > .active > a {
+  background-color: #D8CEFF; /* Background color on hover/active */
+  color: #FFFFFF; /* Text color on hover/active */
+}
+
+/* Active List Group Item Styles */
+.list-group-item.active,
+.list-group-item.active:focus,
+.list-group-item.active:hover {
+  z-index: 2;
+  color:  #00BFB3; /* Text color for active list item */
+  background-color: #E4D0EF; /* Background color for active list item */
+  border-color:  #00BFB3; /* Border color for active list item */
+}
+
+/* Title, Subtitle, Author, and Date Styles */
+h1.title {
+  color: #003057; /* Color for title */
+}
+
+h4.subtitle {
+  color: #003057; /* Color for subtitle */
+}
+
+h5.author {
+  color: #003057; /* Color for author */
+}
+
+h5.date {
+  color: #8B5F65; /* Color for date */
+}
+
+/* Hyperlink Styles */
+a {
+  color: #003057; /* Text color for hyperlinks */
+  text-decoration: none; /* Removes underline from hyperlinks */
+}
+
+a:hover {
+  color: #005a9c; /* Color when hovering over hyperlinks */
+  text-decoration: underline; /* Underlines text when hovering over hyperlinks */
+}
+
+a:visited {
+  color: #6C4F56; /* Color for visited hyperlinks */
+}
+
+a:active {
+  color: #4A2C31; /* Color for active hyperlinks (while clicking) */
+}
+
+</style>
+
+📌 Aviso de Responsabilidad
+Este espacio busca fortalecer el aprendizaje y la comunicación de datos mediante ejemplos reales. Para ello, hemos seleccionado fragmentos de textos publicados con fines didácticos.
+
+1️⃣ Interpretaciones y revisiones
+Los ejemplos ilustran posibles mejoras en la redacción. Las revisiones presentadas representan solo una interpretación del texto original y, si no reflejan la intención de quienes lo escribieron, esto resalta la importancia de una mayor claridad en la escritura.
+
+2️⃣ Respeto a quienes escriben
+Los ejemplos provienen de textos reales, incluyendo algunos propios. No se pretende descalificar a quienes los escribieron, sino mostrar patrones comunes en la escritura científica. Si alguien se siente afectade, puede solicitar la eliminación del fragmento correspondiente.
+
+3️⃣ Contexto y referencias
+Para evitar señalar de manera negativa a quienes escribieron los textos, no se incluyen citas. Los fragmentos han sido seleccionados por su valor didáctico y pueden haber sido extraídos de su contexto original. Si se desea más información, los textos pueden buscarse en línea.
+
+4️⃣ Síntesis de principios
+Estos lineamientos resumen ideas clave sobre escritura científica, basadas en obras de referencia. Se recomienda explorar fuentes adicionales, como los libros de Williams y Gopen, para profundizar en el tema.

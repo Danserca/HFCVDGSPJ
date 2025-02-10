@@ -1,0 +1,141 @@
+---
+title: "Argumentos descriptivos"
+subtitle: "Descripción de la realidad social"
+author: "Daniela Serrano Campos"
+institute: "FCPyS"
+date: "22/09/24"
+output:
+  xaringan::moon_reader:
+    lib_dir: libs
+    css: 
+      - default
+      - rladies
+      - rladies-fonts
+    seal: false
+    self_contained: true
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+      ratio: "4:3"
+---
+
+```{r setup, include = FALSE}
+# remotes::install_github("mitchelloharawild/icons")
+# devtools::install_github("hadley/emo")
+library(knitr)                              # paquete que trae funciones utiles para R Markdown
+library(tidyverse)                          # paquete que trae varios paquetes comunes en el tidyverse
+library(datos)                              # paquete que viene con datos populares traducidos al español :)
+library(emo)                                # paquete para emojislibrary(knitr)
+library(tidyverse)
+library(xaringanExtra)
+library(icons) # # install.packages("remotes"); remotes::install_github("mitchelloharawild/icons")
+library(fontawesome)
+
+knitr::opts_chunk$set(echo = FALSE,         # FALSE: los bloques de código NO se muestran
+                      dpi = 300,            # asegura gráficos de alta resolución
+                      warning = FALSE,      # los mensajes de advertencia NO se muestran
+                      error = FALSE)        # los mensajes de error NO se muestran
+```
+
+class: title-slide, middle, center
+background-image: url(figures/Clases_Rladies_Slide1.png) 
+background-position: 90% 75%, 75% 75%, center
+background-size: 1210px,210px, cover
+
+# `r rmarkdown::metadata$title`
+----
+## **`r rmarkdown::metadata$subtitle`**
+### `r rmarkdown::metadata$author`
+### `r rmarkdown::metadata$date`
+
+---
+name: hola
+class: inverse, middle, center
+
+
+# ¿Cómo describimos la realidad?  
+
+## Gerring (2014)
+
+
+???
+Se presenta un resumen del capítulo 6  de Gerring (2014).
+
+---
+class: middle
+
+
+# Argumentos descriptivos
+.right-column[
+**CUATRO TIPOS DE AFIRMACIONES DESCRIPTIVAS**  
+1. **Indicadores:** Unidimensionales (atributos, variables).
+2. **Síntesis:** Una única categoría multidimensional en la que los diversos atributos giran en torno a un tema central.
+3. **Tipologías:** Categorías multidimensionales que son mutuamente excluyentes, exhaustivas y definidas por principios uniformes.
+4. **Asociaciones:** Multidimensionales con un componente probabilístico fuerte.
+
+.footnote[
+----
+                                   Gerring (2014, p.160).]                                                                        
+]
+
+---
+class: middle
+
+
+# Indicadores 
+.right-column[
+1. **Directos:** Unidimensionales (atributos, variables).
+2. **Indirectos:** *Proxies*.
+]
+---
+class: middle, inverse
+
+
+# Síntesis
+.right-column[
+Incluye todo lo que contiene el dominio. Esfuerzo holista que acentúa las semejanzas más que las diferencias.
+]
+---
+#  Tipologías:
+
+
+
+1. Simple
+2. Temporal
+3. Taxonómica
+4. Configurativa
+5. Secuencial
+3. Matriz 
+
+
+<h2 style="text-align: center;">Tipos de problemas (Alford y Head 2014)</h2>
+
+||                    **Complejidad política**   |                      
+                       |--------------------|-------------------------|
+ |        Complejidad cognitiva               |Complejos          |      **Perversos**         |
+ |                       |Simples        | Complejos               |
+
+
+.footnote[
+----
+                                   Gerring (2014, p.26).]                                                                        
+
+---
+name: adios
+class: middle, inverse
+
+.pull-left[
+# **¡Gracias!**
+<br/>
+## Gracias a R-Ladies Xalapa  
+
+### Por promover la diversidad de género en la comunidad de R
+
+]
+
+
+
+???
+¡Gracias por tu atención! 
+

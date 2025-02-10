@@ -1,0 +1,131 @@
+---
+title: "Glosario"
+date: "`r format(Sys.Date(), '%d de %B de %Y')`"
+output:
+  html_document:
+    toc: true
+    toc_float: true
+    collapsed: false
+    number_sections: false
+    toc_depth: 1
+    theme: spacelab
+    #code_folding: hide
+---
+
+<style type="text/css">
+
+/* Navbar Styles */
+.navbar {
+  background-color:  #00BFB3 !important; /* Background color of the navbar */
+  border-color:  #0077C8 !important; /* Border color of the navbar */
+  background-image: none !important; /* Removes any background image */
+  height: 65px; /* Sets navbar height */
+}
+
+/* Navbar Link Styles */
+.navbar-default .navbar-nav > li > a {
+  color: #FFFFFF !important;  /* Text color for links */
+  font-weight: bold !important; /* Bold text */
+}
+
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+  color:  #00BFB3 !important; /* Hover and focus text color */
+  font-weight: bold; /* Keeps text bold on hover/focus */
+}
+
+/* Active List Group Item Styles */
+.list-group-item.active,
+.list-group-item.active:focus,
+.list-group-item.active:hover {
+  z-index: 2;
+  color:  #00BFB3; /* Text color for active list item */
+  background-color: #E4D0EF; /* Background color for active list item */
+  border-color:  #00BFB3; /* Border color for active list item */
+}
+
+/* Title, Subtitle, Author, and Date Styles */
+h1.title {
+  color: #003057; /* Color for title */
+}
+
+h4.subtitle {
+  color: #003057; /* Color for subtitle */
+}
+
+h5.author {
+  color: #003057; /* Color for author */
+}
+
+h5.date {
+  color: #8B5F65; /* Color for date */
+}
+
+/* Hyperlink Styles */
+a {
+  color: #003057; /* Text color for hyperlinks */
+  text-decoration: none; /* Removes underline from hyperlinks */
+}
+
+a:hover {
+  color: #005a9c; /* Color when hovering over hyperlinks */
+  text-decoration: underline; /* Underlines text when hovering over hyperlinks */
+}
+
+a:visited {
+  color: #6C4F56; /* Color for visited hyperlinks */
+}
+
+a:active {
+  color: #4A2C31; /* Color for active hyperlinks (while clicking) */
+}
+
+</style>
+
+
+# 📖 Glosario de términos
+
+<!-- Barra de búsqueda -->
+<input type="text" id="glosario-busqueda" onkeyup="filtrarGlosario()" placeholder="🔍 Buscar un término..." class="form-control mb-3">
+
+<!-- Tabla de términos -->
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th>Término</th>
+      <th>Definición</th>
+    </tr>
+  </thead>
+  <tbody id="glosario">
+  <tr><td><strong>Accesibilidad</strong></td><td>El grado de sencillez y claridad con el que las personas usuarias pueden acceder, localizar, entender y obtener los datos.</td></tr>
+    <tr><td><strong>Acceso abierto</strong></td><td>Acceso gratuito, oportuno y sin restricciones a datos y recursos mediante software libre o código abierto.</td></tr>
+    <tr><td><strong>API</strong></td><td>Interfaz de comunicación que permite intercambiar, acceder y aprovechar datos y funcionalidades de una aplicación.</td></tr>
+    <tr><td><strong>Big Data</strong></td><td>Enfoque de análisis de datos de gran volumen y velocidad que no pueden ser procesados con herramientas convencionales.</td></tr>
+    <tr><td><strong>Ciencia de datos</strong></td><td>Disciplina que combina estadística, programación y visualización para analizar datos masivos.</td></tr>
+    <tr><td><strong>Datos abiertos</strong></td><td>Datos que pueden ser utilizados y redistribuidos libremente por cualquier persona sin restricciones.</td></tr>
+    <tr><td><strong>SQL</strong></td><td>Lenguaje de consulta estructurada utilizado para gestionar bases de datos relacionales.</td></tr>
+    <tr><td><strong>Visualización de datos</strong></td><td>Presentación de datos en gráficos para facilitar su interpretación y comunicación.</td></tr>
+  </tbody>
+</table>
+
+<!-- JavaScript para la búsqueda en glosario -->
+<script>
+  function filtrarGlosario() {
+    let input = document.getElementById("glosario-busqueda");
+    let filter = input.value.toLowerCase();
+    let table = document.getElementById("glosario");
+    let tr = table.getElementsByTagName("tr");
+
+    for (let i = 0; i < tr.length; i++) {
+      let td = tr[i].getElementsByTagName("td")[0];
+      if (td) {
+        let textValue = td.textContent || td.innerText;
+        if (textValue.toLowerCase().indexOf(filter) > -1) {
+          tr[i].style.display = "";
+        } else {
+          tr[i].style.display = "none";
+        }
+      }
+    }
+  }
+</script>

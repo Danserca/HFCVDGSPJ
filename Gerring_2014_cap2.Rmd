@@ -1,0 +1,184 @@
+---
+title: "Principio"
+subtitle: "¿Qué y para qué investigar?"
+author: "Daniela Serrano Campos"
+institute: "FCPyS"
+date: "11/08/24"
+output:
+  xaringan::moon_reader:
+    lib_dir: libs
+    css: 
+      - default
+      - rladies
+      - rladies-fonts
+    seal: false
+    self_contained: true
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+      ratio: "4:3"
+---
+
+```{r setup, include = FALSE}
+# remotes::install_github("mitchelloharawild/icons")
+# devtools::install_github("hadley/emo")
+library(knitr)                              # paquete que trae funciones utiles para R Markdown
+library(tidyverse)                          # paquete que trae varios paquetes comunes en el tidyverse
+library(datos)                              # paquete que viene con datos populares traducidos al español :)
+library(emo)                                # paquete para emojislibrary(knitr)
+library(tidyverse)
+library(xaringanExtra)
+library(icons) # # install.packages("remotes"); remotes::install_github("mitchelloharawild/icons")
+library(fontawesome)
+
+knitr::opts_chunk$set(echo = FALSE,         # FALSE: los bloques de código NO se muestran
+                      dpi = 300,            # asegura gráficos de alta resolución
+                      warning = FALSE,      # los mensajes de advertencia NO se muestran
+                      error = FALSE)        # los mensajes de error NO se muestran
+```
+
+class: title-slide, middle, center
+background-image: url(figures/Clases_Rladies_Slide1.png) 
+background-position: 90% 75%, 75% 75%, center
+background-size: 1210px,210px, cover
+
+# `r rmarkdown::metadata$title`
+----
+## **`r rmarkdown::metadata$subtitle`**
+### `r rmarkdown::metadata$author`
+### `r rmarkdown::metadata$date`
+
+---
+name: hola
+class: inverse, middle, center
+
+
+# ¿Para qué investigar?  
+
+## Gerring (2014)
+
+
+???
+Se presenta un resumen de los capítulo 2 de Gerring (2014).
+
+---
+class: middle
+
+.left-column[
+# Objetivos de la ciencia social
+]
+.right-column[
+**El objetivo principal de la investigación es hacer avanzar las fronteras del conocimiento, mediante la dialéctica entre:**
+<br><br>
+1. **Descubrimiento** (conjetura, exploración, innovación, formación de la teoría).Confianza en la capacidad teórica, pero escepticismo para comprobarlas.⤵️  
+**Para evitar error tipo II (aceptar _X<sub>0</sub>_ falsa).**
+<br><br>
+2. **Apreciación** (valoración, demostración, evaluación, justificación, pruebas, comprobación, verificación/falsación). Viceversa ⤴️  
+**Para evitar error tipo I (rechazar _X<sub>0</sub>_ verdadera).**
+
+.footnote[
+----
+                                   Gerring (2014, p.50).]                                                                        
+]
+---
+
+
+#  Descubrimiento:
+
+Requiere de una implicación crítica y agresiva con el statu quo.
+
+.right-column[
+Niveles de la **innovación causal**:
+
+
+1. Exploratorio (preliminar)
+2. Descriptivo (concierne a la conceptualización y medición)
+3. Causal   
+3.1. Nueva variable explicativa _X_  
+3.2. Eclipse teórico: marco causal nuevo  
+3.3. Remontarse _X<sub>1</sub>_  
+3.4. Mecanismos causales  
+3.5. Población de una inferencia 
+
+
+
+.footnote[
+----
+                                   Gerring (2014, p.26).]                                                                        
+]
+---
+
+# Apreciación  
+
+.right-column[
+**Falsabilidad**, en la medida que es:
+
+
+1. Operacional <br>
+
+2. Parsimonioso <br>
+
+3. Alcance general <br>
+
+4. Deliminatado (población clara y defendible) <br>
+
+5. Coherente <br>
+
+6. Claro <br>
+
+.footnote[
+----
+                                   Gerring (2014, p.27).]                                                                        
+]
+---
+class: inverse, middle
+
+# Pregunta de investigación
+----
+
+.pull-left[
+
+## Considerar
+1. Estudiar la tradición
+2. Comenzar donde se está
+3. Alejarse del terruño
+4. Jugar con las ideas
+5. Practicar la descreencia
+6. Observar emp+aticamente
+7. Teorizar salvajemente
+8. Hacer análisis exploratorios
+
+
+
+]<!--end of left-column-->
+
+.pull-right[
+.left[
+<br>
+<br>
+<br>
+<img src="https://tinyurl.com/27zhrfd5" alt="[Fuente:](https://tinyurl.com/27zhrfd5)" width="500px">
+
+]
+
+] 
+
+---
+name: adios
+class: middle, inverse
+
+.pull-left[
+# **¡Gracias!**
+<br/>
+## Gracias a R-Ladies Xalapa  
+
+### Por promover la diversidad de género en la comunidad de R
+
+]
+
+
+
+???
+¡Gracias por tu atención! 
+

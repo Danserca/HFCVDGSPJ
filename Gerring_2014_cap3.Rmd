@@ -1,0 +1,136 @@
+---
+title: "Argumentos"
+subtitle: "¿Qué y cómo son?"
+author: "Daniela Serrano Campos"
+institute: "FCPyS"
+date: "11/08/24"
+output:
+  xaringan::moon_reader:
+    lib_dir: libs
+    css: 
+      - default
+      - rladies
+      - rladies-fonts
+    seal: false
+    self_contained: true
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+      ratio: "4:3"
+---
+
+```{r setup, include = FALSE}
+# remotes::install_github("mitchelloharawild/icons")
+# devtools::install_github("hadley/emo")
+# library(knitr)                              # paquete que trae funciones utiles para R Markdown
+library(tidyverse)                          # paquete que trae varios paquetes comunes en el tidyverse
+library(datos)                              # paquete que viene con datos populares traducidos al español :)
+library(emo)                                # paquete para emojislibrary(knitr)
+library(tidyverse)
+library(xaringanExtra)
+library(icons) # # install.packages("remotes"); remotes::install_github("mitchelloharawild/icons")
+library(fontawesome)
+
+knitr::opts_chunk$set(echo = FALSE,         # FALSE: los bloques de código NO se muestran
+                      dpi = 300,            # asegura gráficos de alta resolución
+                      warning = FALSE,      # los mensajes de advertencia NO se muestran
+                      error = FALSE)        # los mensajes de error NO se muestran
+```
+
+class: title-slide, middle, center
+background-image: url(figures/Clases_Rladies_Slide1.png) 
+background-position: 90% 75%, 75% 75%, center
+background-size: 1210px,210px, cover
+
+# `r rmarkdown::metadata$title`
+----
+## **`r rmarkdown::metadata$subtitle`**
+### `r rmarkdown::metadata$author`
+### `r rmarkdown::metadata$date`
+
+---
+name: hola
+class: inverse, middle, center
+
+
+# ¿Cómo argumentar?  
+
+## Gerring (2014)
+
+
+???
+Se presenta un resumen de los capítulo 2 de Gerring (2014).
+
+---
+class: inverse, middle
+.pull.center[
+# Elementos de definición
+]
+.pull.center[
+**Es lo que especulamos que podría ser verdadero sobre el mundo.** 
+]  
+<br>  
+1. Conceptos clave
+2. Hipótesis que se pueden poner a prueba
+3. Modelo formal o marco teórico
+4. Mecanismos causales (para argumentos causales)
+
+---
+class: middle
+
+# Tipos de argumento según nivel de abstracción
+
+<br>  
+1. Paradigmas o marcos teóricos
+2. Modelos
+3. Hipótesis
+
+???
+Mucha fluidez termonológica en este campo semántico
+---
+<h2 style="text-align: center;">Propuesta de un marco unificado (Gerring 2014)</h2>
+
+| **#** | **Criterio**      | **Descripción**                                                                 |
+|-------|--------------------|---------------------------------------------------------------------------------|
+| **1** | **Verdad**         | (precisión, validez, veracidad) <br> ¿Es verdadero?                              |
+| **2** | **Precisión**      | (especificidad) <br> ¿Es preciso?                                                |
+| **3** | **Generalidad**    | (extensión, dominio, población, rango, amplitud) <br> ¿Cuán amplio es su rango? <br> ¿Cuántos fenómenos describe/explica una teoría? |
+| **4** | **Delimitación**   | (condiciones de alcance) <br> ¿Cuán acotado está?                                 |
+| **5** | **Parsimonia**     | (concisión, economía, la navaja de Ockham, reducción, simplicidad) <br> ¿Cuán parsimonioso es? <br> ¿Cuántos supuestos se requieren? |
+
+
+.footnote[
+----
+                                                  Gerring (2014, p.81).]                                                                        
+---
+
+<h2 style="text-align: center;">Propuesta de un marco unificado (Gerring 2014)</h2>
+
+| **#** | **Criterio**      | **Descripción**                                                                 |
+|-------|--------------------|---------------------------------------------------------------------------------|
+| **6** | **Coherencia**     | (claridad, consistencia; antónimo: ambigüedad) <br> ¿Cuán coherente es?           |
+| **7** | **Conmensurabilidad** | (consiliencia, armonía, economía lógica, utilidad teórica; que no sea ad hoc) <br> ¿Cómo se combina con otras inferencias? <br> ¿Promueve la economía lógica en un campo? |
+| **8** | **Relevancia**     | (importancia cotidiana, significación) <br> ¿Cuán relevante es para cuestiones que preocupan a los ciudadanos y los diseñadores de políticas? |
+
+.footnote[
+----
+                                                  Gerring (2014, p.81).]    
+---
+name: adios
+class: middle, inverse
+
+.pull-left[
+# **¡Gracias!**
+<br/>
+## Gracias a R-Ladies Xalapa  
+
+### Por promover la diversidad de género en la comunidad de R
+
+]
+
+
+
+???
+¡Gracias por tu atención! 
+
