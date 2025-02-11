@@ -5,92 +5,159 @@ output: html_document
 
 <style type="text/css">
 
-/* Navbar Styles */
+/* ===== NAVBAR: Estilos generales ===== */
 .navbar {
-  background-color:  #00BFB3 !important; /* Background color of the navbar */
-  border-color:  #0077C8 !important; /* Border color of the navbar */
-  background-image: none !important; /* Removes any background image */
-  height: 65px; /* Sets navbar height */
+  background-color: #0F172A !important; /* Fondo sólido oscuro */
+  border-bottom: 3px solid #1E293B !important; /* Línea inferior sutil */
+  height: 65px !important; /* Ajustar altura */
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Alinea elementos correctamente */
+  padding: 10px 20px; /* Espaciado interno */
 }
 
-/* Navbar Link Styles */
+/* Quitar cualquier degradado de fondo heredado del tema */
+.navbar-default {
+  background-image: none !important;
+}
+
+/* Estilos de los enlaces de la barra de navegación */
 .navbar-default .navbar-nav > li > a {
-  color: #FFFFFF !important;  /* Text color for links */
-  font-weight: bold !important; /* Bold text */
+  color: #E5E7EB !important; /* Texto gris claro */
+  font-weight: bold !important;
+  font-size: 16px !important;
+  text-transform: uppercase;
+  padding: 12px 18px !important;
+  text-decoration: none !important;
+  transition: color 0.3s ease-in-out;
 }
 
+/* Efecto al pasar el cursor */
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > li > a:focus {
-  color:  #00BFB3 !important; /* Hover and focus text color */
-  font-weight: bold; /* Keeps text bold on hover/focus */
+  color: #FACC15 !important; /* Amarillo brillante */
+  text-decoration: underline !important;
 }
 
-/* Navbar Collapse Menu Styles */
-.navbar-collapse {
-  background-color:  #00BFB3 !important; /* Background color for the collapsed navbar */
+/* Enlace activo */
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+  color: #FACC15 !important;
+  text-decoration: underline !important;
 }
 
-/* Dropdown Menu Link Styles */
-.navbar-nav > li > a {
-  color: #D8CEFF; /* Text color for dropdown links */
-  font-weight: bold;
-  padding: 10px 15px; /* Padding for dropdown links */
+/* ===== MENÚ DESPLEGABLE ===== */
+.navbar-nav .dropdown-menu {
+  background-color: #1E293B !important; /* Fondo oscuro */
+  border: none !important;
+  padding: 5px 0 !important;
+  min-width: 200px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.navbar-nav > li > a:hover,
-.navbar-nav > li > a:focus,
-.navbar-nav > .active > a {
-  background-color: #D8CEFF; /* Background color on hover/active */
-  color: #FFFFFF; /* Text color on hover/active */
+/* Estilos para los enlaces dentro del dropdown */
+.navbar-nav .dropdown-menu > li > a {
+  color: #E5E7EB !important;
+  font-size: 14px !important;
+  padding: 10px 15px !important;
+  transition: background 0.3s ease-in-out;
 }
 
-/* Active List Group Item Styles */
-.list-group-item.active,
-.list-group-item.active:focus,
-.list-group-item.active:hover {
-  z-index: 2;
-  color:  #00BFB3; /* Text color for active list item */
-  background-color: #E4D0EF; /* Background color for active list item */
-  border-color:  #00BFB3; /* Border color for active list item */
+/* Hover en el dropdown */
+.navbar-nav .dropdown-menu > li > a:hover {
+  background-color: #334155 !important;
+  color: #FACC15 !important;
 }
 
-/* Title, Subtitle, Author, and Date Styles */
+/* Asegurar alineación y visibilidad del dropdown */
+.navbar-nav > li {
+  position: relative;
+}
+
+.navbar-nav .dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  display: none;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+}
+
+/* Mostrar dropdown cuando el cursor pasa sobre el elemento padre */
+.navbar-nav > li:hover .dropdown-menu {
+  display: block;
+  opacity: 1;
+  visibility: visible;
+}
+
+/* ===== ESTILOS GENERALES ===== */
+body {
+  color: #2E3A46 !important;
+  font-family: "Arial", sans-serif !important;
+}
+
+/* Estilos del título principal */
 h1.title {
-  color: #003057; /* Color for title */
+  text-align: center;
+  font-weight: bold;
+  width: 100%;
+  margin: 20px 0;
+  font-size: 42px;
+  color: #0F172A;
 }
 
-h4.subtitle {
-  color: #003057; /* Color for subtitle */
+/* Estilos para subtítulos */
+h2, h3 {
+  color: #001F3F;
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 1.4;
 }
 
-h5.author {
-  color: #003057; /* Color for author */
+/* Color y tamaño de los párrafos */
+p {
+  color: #354A5F !important;
+  font-size: 18px;
+  line-height: 1.6;
 }
 
-h5.date {
-  color: #8B5F65; /* Color for date */
-}
-
-/* Hyperlink Styles */
+/* ===== ESTILOS DE ENLACES ===== */
 a {
-  color: #003057; /* Text color for hyperlinks */
-  text-decoration: none; /* Removes underline from hyperlinks */
+  color: #582C35;
+  text-decoration: underline;
 }
 
 a:hover {
-  color: #005a9c; /* Color when hovering over hyperlinks */
-  text-decoration: underline; /* Underlines text when hovering over hyperlinks */
+  color: #005a9c;
+  text-decoration: underline;
 }
 
 a:visited {
-  color: #6C4F56; /* Color for visited hyperlinks */
+  color: #6C4F56;
 }
 
 a:active {
-  color: #4A2C31; /* Color for active hyperlinks (while clicking) */
+  color: #4A2C31;
+}
+/* ===== Estilos para listas numeradas (ol) y listas con viñetas (ul) ===== */
+ol, ul {
+  font-size: 20px !important; /* Aumenta el tamaño del texto */
+  line-height: 1.8 !important; /* Mejora el espaciado entre líneas */
+  color: #2E3A46 !important; /* Mantiene el color adecuado */
 }
 
+/* Asegurar que los elementos de la lista (li) también adopten el nuevo tamaño */
+ol li, ul li {
+  font-size: 20px !important; /* Tamaño grande */
+  margin-bottom: 10px !important; /* Espacio entre elementos */
+}
+
+
 </style>
+
+<div style="color:#8B5F65;"></div>
 
 📌 Aviso de Responsabilidad
 Este espacio busca fortalecer el aprendizaje y la comunicación de datos mediante ejemplos reales. Para ello, hemos seleccionado fragmentos de textos publicados con fines didácticos.

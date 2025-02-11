@@ -275,46 +275,104 @@ y Visualización de Datos de Gobierno</h1>
 </div>
 
 
+<p><img src="images/logo.png" alt="Logo" class="full-width-container"></p>
 <style type="text/css">
+/* ===== HACER QUE LA IMAGEN SE EXTIENDA A TODO EL ANCHO ===== */
+.full-width-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden; /* Evita desbordamientos */
+    opacity: 0.5; /* Ajusta la opacidad (0 = totalmente transparente, 1 = sin transparencia) */
+}
+
+.full-width-image {
+    width: 100%; /* Ocupar todo el ancho */
+    height: 100%; /* Mantener proporción */
+    display: block;
+    opacity: 0.5; /* Ajusta la opacidad (0 = totalmente transparente, 1 = sin transparencia) */
+}
+
+
 
 /* Navbar Styles */
+/* ===== Estilos generales de la barra de navegación ===== */
 .navbar {
-  background-color:  #00BFB3 !important; /* Background color of the navbar */
-  border-color:   #00BFB3 !important; /* Border color of the navbar */
-  background-image: none !important; /* Removes any background image */
-  height: 65px; /* Sets navbar height */
+  background-color: #0F172A !important; /* Fondo oscuro */
+  border-bottom: 3px solid #1E293B !important; /* Borde inferior sutil */
+  height: 65px !important; /* Ajustar altura */
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-/* Navbar Link Styles */
+/* ===== Estilo de los enlaces en la barra de navegación ===== */
 .navbar-default .navbar-nav > li > a {
-  color: #FFFFFF !important;  /* Text color for links */
-  font-weight: bold !important; /* Bold text */
+  color: #E5E7EB !important; /* Color gris claro */
+  font-weight: bold !important; /* Negrita */
+  font-size: 18px !important; /* Tamaño de texto */
+  text-transform: uppercase !important; /* Convertir en mayúsculas */
+  padding: 15px 20px !important; /* Espaciado más uniforme */
+  text-decoration: none !important; /* Sin subrayado */
+  transition: all 0.3s ease-in-out; /* Transición suave */
 }
 
+/* ===== Efecto hover y focus ===== */
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > li > a:focus {
-  color: #D8CEFF !important; /* Hover and focus text color */
-  font-weight: bold; /* Keeps text bold on hover/focus */
+  color: #FACC15 !important; /* Amarillo brillante */
+  background-color: transparent !important; /* Sin fondo */
+  text-decoration: underline !important; /* Subrayado al pasar el cursor */
 }
 
-/* Navbar Collapse Menu Styles */
-.navbar-collapse {
-  background-color: #00BFB3 !important; /* Background color for the collapsed navbar */
+/* ===== Estilos para el enlace activo ===== */
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+  color: #FACC15 !important; /* Amarillo brillante */
+  text-decoration: underline !important;
+  background-color: transparent !important;
 }
 
-/* Dropdown Menu Link Styles */
-.navbar-nav > li > a {
-  color: #D8CEFF; /* Text color for dropdown links */
-  font-weight: bold;
-  padding: 10px 15px; /* Padding for dropdown links */
+/* ===== Diseño del submenú desplegable ===== */
+.navbar-nav .dropdown-menu {
+  background-color: #1E293B !important; /* Fondo oscuro intermedio */
+  border-radius: 0 !important; /* Sin bordes redondeados */
+  border: none !important; /* Sin borde */
+  padding: 0 !important; /* Ajuste de espaciado */
 }
 
-.navbar-nav > li > a:hover,
-.navbar-nav > li > a:focus,
-.navbar-nav > .active > a {
-  background-color:  #00BFB3; /* Background color on hover/active */
-  color:  #00BFB3; /* Text color on hover/active */
+/* Estilos de los elementos dentro del dropdown */
+.navbar-nav .dropdown-menu > li > a {
+  color: #E5E7EB !important; /* Color de texto */
+  font-size: 16px !important;
+  padding: 12px 20px !important;
+  transition: background 0.3s ease-in-out;
 }
+
+/* Hover en el dropdown */
+.navbar-nav .dropdown-menu > li > a:hover {
+  background-color: #334155 !important; /* Gris azulado más oscuro */
+  color: #FACC15 !important; /* Amarillo brillante */
+}
+
+/* Asegurar que los submenús se alineen correctamente */
+.navbar-nav > li {
+  position: relative;
+}
+
+.navbar-nav .dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  display: none;
+}
+
+/* Mostrar el submenú cuando se pasa el cursor */
+.navbar-nav > li:hover .dropdown-menu {
+  display: block;
+}
+
 
 /* Active List Group Item Styles */
 .list-group-item.active,
@@ -328,7 +386,16 @@ y Visualización de Datos de Gobierno</h1>
 
 /* Title, Subtitle, Author, and Date Styles */
 h1.title {
-  color:  #003057; /* Color for title */
+  text-align: center; /* Centrar el texto */
+  font-weight: bold !important; /* Negrita */
+  width: 100%; /* Asegurar que ocupe todo el ancho */
+  margin: 20px 0; /* Espaciado superior e inferior */
+  font-size: 48px; /* Ajuste de tamaño */
+  color: #0F172A; /* Azul oscuro */text-align: center; /* Centrar el texto */
+  width: 100%; /* Asegurar que ocupe todo el ancho */
+  margin: 20px 0; /* Espaciado superior e inferior */
+  font-size: 32px; /* Ajuste de tamaño */
+  color: #0F172A; /* Azul oscuro */
 }
 
 h4.subtitle {
@@ -347,7 +414,7 @@ h5.date {
 /* Hyperlink Styles */
 a {
   color: #582C35; /* Text color for hyperlinks */
-  text-decoration: none; /* Removes underline from hyperlinks */
+  text-decoration: underline; /* Removes underline from hyperlinks */
 }
 
 a:hover {
@@ -363,26 +430,63 @@ a:active {
   color: #4A2C31; /* Color for active hyperlinks (while clicking) */
 }
 
-
-/* Cambia el color del cuerpo del texto */
+/* Color del cuerpo del texto */
 body {
   color: #2E3A46 !important; /* Un gris oscuro para mejorar la lectura */
 }
 
-/* Cambia el color de los párrafos */
+/* Color de los párrafos */
 p {
   color: #354A5F !important; /* Azul-grisáceo más claro */
 }
 
-/* Cambia el color del texto en listas */
+/* Color del texto en listas */
 ul li {
   color: #005a9c !important; /* Azul más fuerte */
 }
 
+/* Estilo para los títulos (h2, h3) */
+h2, h3 {
+  color: #001F3F; /* Azul oscuro */
+  font-weight: bold; /* Negrita */
+  font-size: 22px; /* Tamaño del texto */
+  line-height: 1.4; /* Espaciado entre líneas */
+}
+
+/* Personaliza las secciones numeradas */
+h2 span, h3 span {
+  color: #E30B5C; /* Rojo oscuro */
+  font-weight: bold; /* Negrita */
+}
+
+/* Ajusta el estilo de los párrafos */
+p {
+  color: #354A5F !important; /* Azul-grisáceo */
+  font-size: 18px; /* Tamaño de texto */
+  line-height: 1.6; /* Espaciado */
+}
+
+/* Ajusta el peso y color del texto dentro de listas */
+ul li {
+  color: #005a9c !important;
+  font-weight: normal;
+}
+
+/* ===== Estilos para listas numeradas (ol) y listas con viñetas (ul) ===== */
+ol, ul {
+  font-size: 20px !important; /* Aumenta el tamaño del texto */
+  line-height: 1.8 !important; /* Mejora el espaciado entre líneas */
+  color: #2E3A46 !important; /* Mantiene el color adecuado */
+}
+
+/* Asegurar que los elementos de la lista (li) también adopten el nuevo tamaño */
+ol li, ul li {
+  font-size: 20px !important; /* Tamaño grande */
+  margin-bottom: 10px !important; /* Espacio entre elementos */
+}
+
+
 </style>
-<div class="row" style="padding-top: 30px;">
-<div class="col-sm-6" style="color:#00BFB3;">
-<p>¡Bienvenida, bienvenido!</p>
 <p>Este sitio web es una <strong>herramienta interna
 colaborativa</strong>, diseñada para fortalecer las capacidades del
 equipo en la <strong>comunicación, visualización y ciudadanización de
@@ -459,13 +563,6 @@ ciudadanía.</p>
 eficiente entre la información y acción.</strong></p>
 </blockquote>
 <p>Disfruta y envía recomendaciones a este espacio</p>
-</div>
-</div>
-<div class="col-sm-6">
-<!-- ### [Crump Lab: Human Cognition and Performance](https://crumplab.github.io) -->
-<!-- <a href = "https://crumplab.github.io"> -->
-<p><img src="images/logo.png" /> </a></p>
-</div>
 </div>
 
 
