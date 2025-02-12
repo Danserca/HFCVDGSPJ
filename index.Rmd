@@ -26,14 +26,24 @@ output:
 
 /* ===== NAVBAR: Estilos generales ===== */
 .navbar {
-  background-color: #0F172A !important; /* Azul oscuro sólido */
-  border-bottom: 3px solid #1E293B !important; /* Borde inferior sutil */
-  height: 65px !important;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 10px 20px;
+  position: fixed; /* Fija la navbar en la parte superior */
+  top: 0;
+  left: 0;
+  width: 100%; /* Ocupar todo el ancho */
+  z-index: 1000; /* Asegurar que esté sobre otros elementos */
+  background-color: #1E293B !important; /* Color de fondo */
+  border-bottom: 3px solid #334155; /* Borde inferior */
 }
+
+/* Asegurar que el contenido no quede oculto debajo de la navbar */
+body {
+  padding-top: 70px; /* Ajustar el espacio superior según la altura de la navbar */
+}
+
+.navbar-collapse {
+  background-color: #1E293B;
+}
+
 
 /* Quitar cualquier degradado de fondo */
 .navbar-default {
@@ -74,9 +84,18 @@ output:
   min-width: 200px;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
   position: absolute;
+  top: 100%; /* Desplegar justo debajo de la navbar */
+  left: 0; /* Alinear el dropdown a la izquierda */
+  text-align: left; /* Asegurar que el texto también esté alineado a la izquierda */
+}
+
+/* Mantener la barra de navegación desplegable con el fondo adecuado */
+.navbar-collapse {
+  background-color: #1E293B;
+  position: absolute; /* Evitar que empuje el contenido */
+  width: 100%;
   top: 100%;
-  left: 0; /* Alinea el dropdown a la izquierda */
-  text-align: left; /* Asegura que el texto también esté alineado a la izquierda */
+  left: 0;
 }
 
 /* Estilos para los enlaces dentro del dropdown */
@@ -105,7 +124,6 @@ output:
   opacity: 1;
   visibility: visible;
 }
-
 
 /* ===== ESTILOS GENERALES ===== */
 body {

@@ -30,13 +30,18 @@ output:
 
 /* ===== NAVBAR: Estilos generales ===== */
 .navbar {
-  background-color: #0F172A !important; /* Fondo sólido oscuro */
-  border-bottom: 3px solid #1E293B !important; /* Línea inferior sutil */
-  height: 65px !important; /* Ajustar altura */
-  display: flex;
-  align-items: center;
-  justify-content: space-between; /* Alinea elementos correctamente */
-  padding: 10px 20px; /* Espaciado interno */
+  position: fixed; /* Fija la navbar en la parte superior */
+  top: 0;
+  left: 0;
+  width: 100%; /* Ocupar todo el ancho */
+  z-index: 1000; /* Asegurar que esté sobre otros elementos */
+  background-color: #1E293B !important; /* Color de fondo */
+  border-bottom: 3px solid #334155; /* Borde inferior */
+}
+
+/* Asegurar que el contenido no quede oculto debajo de la navbar */
+body {
+  padding-top: 70px; /* Ajustar el espacio superior según la altura de la navbar */
 }
 
 /* Quitar cualquier degradado de fondo heredado del tema */
