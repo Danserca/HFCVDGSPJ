@@ -1,0 +1,687 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="utf-8" />
+<meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+
+
+
+
+<title>Comunicación escrita ciudadana efectiva</title>
+
+<script src="site_libs/header-attrs-2.29/header-attrs.js"></script>
+<script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/spacelab.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<style>h1 {font-size: 34px;}
+       h1.title {font-size: 38px;}
+       h2 {font-size: 30px;}
+       h3 {font-size: 24px;}
+       h4 {font-size: 18px;}
+       h5 {font-size: 16px;}
+       h6 {font-size: 12px;}
+       code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
+       pre:not([class]) { background-color: white }</style>
+<script src="site_libs/jqueryui-1.13.2/jquery-ui.min.js"></script>
+<link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
+<script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
+<script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
+
+<style type="text/css">
+  code{white-space: pre-wrap;}
+  span.smallcaps{font-variant: small-caps;}
+  span.underline{text-decoration: underline;}
+  div.column{display: inline-block; vertical-align: top; width: 50%;}
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  ul.task-list{list-style: none;}
+    </style>
+
+<style type="text/css">code{white-space: pre;}</style>
+<script type="text/javascript">
+if (window.hljs) {
+  hljs.configure({languages: []});
+  hljs.initHighlightingOnLoad();
+  if (document.readyState && document.readyState === "complete") {
+    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
+  }
+}
+</script>
+
+
+
+
+
+
+
+
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+img {
+  max-width:100%;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+summary {
+  display: list-item;
+}
+details > summary > p:only-child {
+  display: inline;
+}
+pre code {
+  padding: 0;
+}
+</style>
+
+
+<style type="text/css">
+.dropdown-submenu {
+  position: relative;
+}
+.dropdown-submenu>.dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -6px;
+  margin-left: -1px;
+  border-radius: 0 6px 6px 6px;
+}
+.dropdown-submenu:hover>.dropdown-menu {
+  display: block;
+}
+.dropdown-submenu>a:after {
+  display: block;
+  content: " ";
+  float: right;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #cccccc;
+  margin-top: 5px;
+  margin-right: -10px;
+}
+.dropdown-submenu:hover>a:after {
+  border-left-color: #adb5bd;
+}
+.dropdown-submenu.pull-left {
+  float: none;
+}
+.dropdown-submenu.pull-left>.dropdown-menu {
+  left: -100%;
+  margin-left: 10px;
+  border-radius: 6px 0 6px 6px;
+}
+</style>
+
+<script type="text/javascript">
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark the anchor link active (and if it's in a dropdown, also mark that active)
+  var dropdown = menuAnchor.closest('li.dropdown');
+  if (window.bootstrap) { // Bootstrap 4+
+    menuAnchor.addClass('active');
+    dropdown.find('> .dropdown-toggle').addClass('active');
+  } else { // Bootstrap 3
+    menuAnchor.parent().addClass('active');
+    dropdown.addClass('active');
+  }
+
+  // Navbar adjustments
+  var navHeight = $(".navbar").first().height() + 15;
+  var style = document.createElement('style');
+  var pt = "padding-top: " + navHeight + "px; ";
+  var mt = "margin-top: -" + navHeight + "px; ";
+  var css = "";
+  // offset scroll position for anchor links (for fixed navbar)
+  for (var i = 1; i <= 6; i++) {
+    css += ".section h" + i + "{ " + pt + mt + "}\n";
+  }
+  style.innerHTML = "body {" + pt + "padding-bottom: 40px; }\n" + css;
+  document.head.appendChild(style);
+});
+</script>
+
+<!-- tabsets -->
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before, .tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "\e259";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "\e258";
+  font-family: 'Glyphicons Halflings';
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+  background-color: transparent;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
+
+<!-- code folding -->
+
+
+
+<style type="text/css">
+
+#TOC {
+  margin: 25px 0px 20px 0px;
+}
+@media (max-width: 768px) {
+#TOC {
+  position: relative;
+  width: 100%;
+}
+}
+
+@media print {
+.toc-content {
+  /* see https://github.com/w3c/csswg-drafts/issues/4434 */
+  float: right;
+}
+}
+
+.toc-content {
+  padding-left: 30px;
+  padding-right: 40px;
+}
+
+div.main-container {
+  max-width: 1200px;
+}
+
+div.tocify {
+  width: 20%;
+  max-width: 260px;
+  max-height: 85%;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  div.tocify {
+    width: 25%;
+  }
+}
+
+@media (max-width: 767px) {
+  div.tocify {
+    width: 100%;
+    max-width: none;
+  }
+}
+
+.tocify ul, .tocify li {
+  line-height: 20px;
+}
+
+.tocify-subheader .tocify-item {
+  font-size: 0.90em;
+}
+
+.tocify .list-group-item {
+  border-radius: 0px;
+}
+
+
+</style>
+
+
+
+</head>
+
+<body>
+
+
+<div class="container-fluid main-container">
+
+
+<!-- setup 3col/9col grid for toc_float and main content  -->
+<div class="row">
+<div class="col-xs-12 col-sm-4 col-md-3">
+<div id="TOC" class="tocify">
+</div>
+</div>
+
+<div class="toc-content col-xs-12 col-sm-8 col-md-9">
+
+
+
+
+<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbar" data-bs-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">HFCVDG</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li>
+  <a href="index.html">Inicio</a>
+</li>
+<li>
+  <a href="Programa_de_CFLNM.html">Data vis</a>
+</li>
+<li>
+  <a href="Clases.html">Comunicación efectiva</a>
+</li>
+<li>
+  <a href="Glosario.html">Glosario</a>
+</li>
+<li>
+  <a href="Disclamer.html">Aviso de responsabilidad</a>
+</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div id="header">
+
+
+
+<h1 class="title toc-ignore">Comunicación escrita ciudadana
+efectiva</h1>
+<h4 class="date">12 de febrero de 2025</h4>
+
+</div>
+
+
+<style type="text/css">
+
+
+/* ===== TABLA DE CONTENIDOS (TOC) ===== */
+.toc {
+  color: #1E293B !important; /* Azul oscuro para coincidir con el navbar */
+  font-weight: bold;
+}
+
+.list-group-item.active, 
+.list-group-item.active:focus, 
+.list-group-item.active:hover {
+    z-index: 2;
+    color: #FACC15 !important; /* Amarillo brillante para contraste */
+    background-color: #1E293B !important; /* Azul oscuro igual que la navbar */
+    border-color: #1E293B !important; /* Consistente con el fondo */
+}
+/* ===== NAVBAR: Estilos generales ===== */
+.navbar {
+  position: fixed; /* Fija la navbar en la parte superior */
+  top: 0;
+  left: 0;
+  width: 100%; /* Ocupar todo el ancho */
+  z-index: 1000; /* Asegurar que esté sobre otros elementos */
+  background-color: #1E293B !important; /* Color de fondo */
+  border-bottom: 3px solid #334155; /* Borde inferior */
+}
+
+/* Asegurar que el contenido no quede oculto debajo de la navbar */
+body {
+  padding-top: 70px; /* Ajustar el espacio superior según la altura de la navbar */
+}
+
+.navbar-collapse {
+  background-color: #1E293B;
+}
+
+
+
+/* Quitar cualquier degradado de fondo heredado del tema */
+.navbar-default {
+  background-image: none !important;
+}
+
+/* Estilos de los enlaces de la barra de navegación */
+.navbar-default .navbar-nav > li > a {
+  color: #E5E7EB !important; /* Texto gris claro */
+  font-weight: bold !important;
+  font-size: 16px !important;
+  text-transform: uppercase;
+  padding: 12px 18px !important;
+  text-decoration: none !important;
+  transition: color 0.3s ease-in-out;
+}
+
+/* Efecto al pasar el cursor */
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+  color: #FACC15 !important; /* Amarillo brillante */
+  text-decoration: underline !important;
+}
+
+/* Enlace activo */
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+  color: #FACC15 !important;
+  text-decoration: underline !important;
+}
+
+/* ===== MENÚ DESPLEGABLE ALINEADO A LA IZQUIERDA ===== */
+.navbar-nav .dropdown-menu {
+  background-color: #1E293B !important; /* Fondo oscuro */
+  border: none !important;
+  padding: 5px 0 !important;
+  min-width: 200px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  position: absolute;
+  top: 100%;
+  left: 0; /* Alinea el dropdown a la izquierda */
+  text-align: left; /* Asegura que el texto también esté alineado a la izquierda */
+}
+.navbar-collapse {
+  background-color: #1E293B;
+}
+
+/* Estilos para los enlaces dentro del dropdown */
+.navbar-nav .dropdown-menu > li > a {
+  color: #E5E7EB !important; /* Color de texto */
+  font-size: 14px !important;
+  padding: 10px 15px !important;
+  transition: background 0.3s ease-in-out;
+  display: block; /* Asegura que cada enlace ocupe toda la línea */
+}
+
+/* Hover en el dropdown */
+.navbar-nav .dropdown-menu > li > a:hover {
+  background-color: #334155 !important; /* Gris azulado más oscuro */
+  color: #FACC15 !important; /* Amarillo brillante */
+}
+
+/* Asegurar alineación del dropdown */
+.navbar-nav > li {
+  position: relative;
+}
+
+/* Mostrar el submenú cuando se pasa el cursor */
+.navbar-nav > li:hover .dropdown-menu {
+  display: block;
+  opacity: 1;
+  visibility: visible;
+}
+
+
+
+/* ===== ESTILOS GENERALES ===== */
+body {
+  color: #2E3A46 !important;
+  font-family: "Arial", sans-serif !important;
+}
+
+/* Estilos del título principal */
+h1.title {
+  text-align: center;
+  font-weight: bold;
+  width: 100%;
+  margin: 20px 0;
+  font-size: 42px;
+  color: #0F172A;
+}
+
+/* Estilos para subtítulos */
+h2, h3 {
+  color: #001F3F;
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 1.4;
+}
+
+/* Color y tamaño de los párrafos */
+p {
+  color: #354A5F !important;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+/* ===== ESTILOS DE ENLACES ===== */
+a {
+  color: #582C35;
+  text-decoration: underline;
+}
+
+a:hover {
+  color: #005a9c;
+  text-decoration: underline;
+}
+
+a:visited {
+  color: #6C4F56;
+}
+
+a:active {
+  color: #4A2C31;
+}
+
+/* ===== Estilos para listas numeradas (ol) y listas con viñetas (ul) ===== */
+ol, ul {
+  font-size: 20px !important; /* Aumenta el tamaño del texto */
+  line-height: 1.8 !important; /* Mejora el espaciado entre líneas */
+  color: #2E3A46 !important; /* Mantiene el color adecuado */
+}
+
+/* Asegurar que los elementos de la lista (li) también adopten el nuevo tamaño */
+ol li, ul li {
+  font-size: 20px !important; /* Tamaño grande */
+  margin-bottom: 10px !important; /* Espacio entre elementos */
+}
+
+
+</style>
+<div style="color:#8B5F65;">
+
+</div>
+<p><strong>Nota:</strong> Iremos incluyendo los materiales que nos
+compartan.</p>
+<div id="guía-de-buenas-prácticas-en-escritura" class="section level1">
+<h1>1. Guía de buenas prácticas en escritura</h1>
+<div id="por-qué-es-importante-comunicar-datos-en-lenguaje-ciudadano"
+class="section level4">
+<h4>¿Por qué es importante comunicar datos en lenguaje ciudadano?</h4>
+<p>Generamos datos con base en métodos científicos y buenas prácticas.
+La escritura es una de las formas más comunes de comunicación en la
+ciencia, pero quienes se dedican a la investigación tienen fama de no
+escribir con claridad. ¿Por qué sucede esto? Una posible razón es que
+rara vez reciben formación específica en escritura. Comunicar con
+claridad tiene grandes beneficios: fortalece la colaboración y reduce la
+brecha entre las oficinas nacionales de estadística y la sociedad.</p>
+<p><br><br></p>
+<hr style="border: 3px solid#75124D;" />
+</div>
+<div id="scientific-writing-resource" class="section level4">
+<h4><a
+href="https://sites.duke.edu/scientificwriting/"><strong>Scientific
+Writing Resource</strong></a></h4>
+<p>El <strong>Scientific Writing Resource</strong> es un curso en línea
+diseñado para enseñar a escribir de manera efectiva. No se enfoca en la
+corrección gramatical o de puntuación, sino en comunicar con claridad la
+intención de quien escribe. Aunque está en inglés y dirigido a personas
+que cursan posgrados en ciencias, puede traducirse y utilizarse de
+manera autodidacta.</p>
+<p>Las lecciones pueden completarse en unos 45 minutos. Basta con leer
+los materiales y ejemplos, y luego practicar con los ejercicios.</p>
+</div>
+<div id="comunicar-de-manera-efectiva" class="section level4">
+<h4>Comunicar de manera efectiva</h4>
+<p>El objetivo de la escritura es la comunicación. Estas lecciones no
+establecen reglas absolutas, sino principios basados en la perspectiva
+de la persona que lee. Se inspiran en las ideas de Joseph Williams y
+George Gopen, quienes sostienen que, si comprendes lo que las lectoras
+esperan, puedes cumplir con esas expectativas y mejorar tu comunicación
+escrita.</p>
+<p>La clave del éxito en la escritura está en la <strong>revisión
+inteligente</strong>. Al principio, considera estos principios como
+guías para revisar tu trabajo. Con la práctica, se integrarán
+naturalmente en tu proceso de escritura.</p>
+<p>Este recurso se centra en la <strong>escritura científica</strong>,
+no en la divulgación científica. ¿Cuál es la diferencia? Descúbrelo en
+la primera lección.</p>
+<p><a href="https://sites.duke.edu/scientificwriting/">Duke Graduate
+School Scientific Writing Resource</a></p>
+<p><br><br></p>
+<hr style="border: 3px solid#75124D;" />
+</div>
+<div id="las-6-reglas-de-orwell" class="section level3">
+<h3>Las 6 reglas de Orwell</h3>
+<ol style="list-style-type: decimal">
+<li>Nunca uses una metáfora, comparación u otra figura retórica que
+estés acostumbrado a ver en periódicos, revistas…<br />
+</li>
+<li>Nunca uses una palabra larga cuando una corta sea suficiente.<br />
+</li>
+<li>Si es posible eliminar una palabra, elimínala.<br />
+</li>
+<li>Nunca uses la voz pasiva cuando puedas usar la activa.<br />
+</li>
+<li>Nunca uses una frase extranjera, una palabra científica o un término
+técnico si puedes pensar en un equivalente en español cotidiano.<br />
+</li>
+<li>Rompe cualquiera de estas reglas antes de decir algo completamente
+bárbaro.</li>
+</ol>
+<p><br><br></p>
+</div>
+</div>
+
+
+
+</div>
+</div>
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.odd').parent('tbody').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open');
+  });
+});
+</script>
+
+<!-- code folding -->
+
+<script>
+$(document).ready(function ()  {
+
+    // temporarily add toc-ignore selector to headers for the consistency with Pandoc
+    $('.unlisted.unnumbered').addClass('toc-ignore')
+
+    // move toc-ignore selectors from section div to header
+    $('div.section.toc-ignore')
+        .removeClass('toc-ignore')
+        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
+
+    // establish options
+    var options = {
+      selectors: "h1",
+      theme: "bootstrap3",
+      context: '.toc-content',
+      hashGenerator: function (text) {
+        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_');
+      },
+      ignoreSelector: ".toc-ignore",
+      scrollTo: 0
+    };
+    options.showAndHide = true;
+    options.smoothScroll = true;
+
+    // tocify
+    var toc = $("#TOC").tocify(options).data("toc-tocify");
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>

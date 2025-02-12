@@ -38,6 +38,8 @@ output:
   align-items: center;
   justify-content: space-between; /* Alinea elementos correctamente */
   padding: 10px 20px; /* Espaciado interno */
+  left: 0; /* Alinea el dropdown a la izquierda */
+  text-align: left; /* Asegura que el texto también esté alineado a la izquierda */
 }
 
 .navbar-collapse {
