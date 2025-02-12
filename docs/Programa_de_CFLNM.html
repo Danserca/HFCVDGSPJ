@@ -346,7 +346,6 @@ div.tocify {
 
 
 <h1 class="title toc-ignore">Recursos</h1>
-<h4 class="date">12 de febrero de 2025</h4>
 
 </div>
 
@@ -371,9 +370,12 @@ div.tocify {
 /* ===== NAVBAR: Estilos generales ===== */
 .navbar {
   position: fixed; /* Fija la navbar en la parte superior */
+  display: flex;
+  justify-content: center; /* Centra todo el contenido de la navbar */
+  align-items: center;
+  width: 100%;
   top: 0;
   left: 0;
-  width: 100%; /* Ocupar todo el ancho */
   z-index: 1000; /* Asegurar que esté sobre otros elementos */
   background-color: #1E293B !important; /* Color de fondo */
   border-bottom: 3px solid #334155; /* Borde inferior */
@@ -398,6 +400,14 @@ body {
   padding: 12px 18px !important;
   text-decoration: none !important;
   transition: color 0.3s ease-in-out;
+}
+
+/* Alinear la navbar correctamente */
+.navbar {
+  display: flex;
+  justify-content: center; /* Centra todo el contenido de la navbar */
+  align-items: center;
+  width: 100%;
 }
 
 /* Efecto al pasar el cursor */
@@ -449,6 +459,7 @@ body {
 /* Asegurar alineación del dropdown */
 .navbar-nav > li {
   position: relative;
+  margin: 0 15px; /* Agrega espacio entre elementos */
 }
 
 /* Mostrar el submenú cuando se pasa el cursor */
@@ -525,38 +536,7 @@ ol li, ul li {
 
 
 </style>
-<div style="color:#75124D;">
-
-</div>
-<div id="descripción-general-y-objetivos-del-hub"
-class="section level1">
-<h1>Descripción general y objetivos del Hub</h1>
-<p>Este sitio provee de herramientas, guías, manuales y recursos para la
-visualización y comunicación efectiva y ciudadada de datos de
-gobierno.</p>
-</div>
-<div id="objetivos" class="section level1">
-<h1>Objetivos</h1>
-<ul>
-<li>Programación básica en R: uso de variables, paquetes, espacios de
-trabajo…<br />
-</li>
-<li>Transformación de datos: procesamiento de archivos de datos para un
-análisis deseado.<br />
-</li>
-<li>Visualización de datos: representación gráfica.<br />
-</li>
-<li>Comunicación de la investigación: cómo utilizar los scripts de R
-Markdown para crear manuscritos correctamente referenciados para
-comunicar la investigación.<br />
-</li>
-<li>Investigación reproducible: principios de la ciencia abierta,
-incluidas herramientas para compartir datos, compartir manuscritos,
-diseños de investigación, compartir métodos.</li>
-</ul>
 <p><br><br></p>
-<hr style="border: 3px solid#75124D;" />
-</div>
 <div id="cómo-seleccionar-la-gráfica-adecuada-para-tu-análisis"
 class="section level1">
 <h1>¿Cómo seleccionar la gráfica adecuada para tu análisis?</h1>

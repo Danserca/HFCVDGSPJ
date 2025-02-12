@@ -23,9 +23,12 @@ output: html_document
 /* ===== NAVBAR: Estilos generales ===== */
 .navbar {
   position: fixed; /* Fija la navbar en la parte superior */
+  display: flex;
+  justify-content: center; /* Centra todo el contenido de la navbar */
+  align-items: center;
+  width: 100%;
   top: 0;
   left: 0;
-  width: 100%; /* Ocupar todo el ancho */
   z-index: 1000; /* Asegurar que esté sobre otros elementos */
   background-color: #1E293B !important; /* Color de fondo */
   border-bottom: 3px solid #334155; /* Borde inferior */
@@ -35,7 +38,6 @@ output: html_document
 body {
   padding-top: 70px; /* Ajustar el espacio superior según la altura de la navbar */
 }
-
 
 /* Quitar cualquier degradado de fondo heredado del tema */
 .navbar-default {
@@ -51,6 +53,14 @@ body {
   padding: 12px 18px !important;
   text-decoration: none !important;
   transition: color 0.3s ease-in-out;
+}
+
+/* Alinear la navbar correctamente */
+.navbar {
+  display: flex;
+  justify-content: center; /* Centra todo el contenido de la navbar */
+  align-items: center;
+  width: 100%;
 }
 
 /* Efecto al pasar el cursor */
@@ -80,11 +90,9 @@ body {
   left: 0; /* Alinea el dropdown a la izquierda */
   text-align: left; /* Asegura que el texto también esté alineado a la izquierda */
 }
-
 .navbar-collapse {
   background-color: #1E293B;
 }
-
 
 /* Estilos para los enlaces dentro del dropdown */
 .navbar-nav .dropdown-menu > li > a {
@@ -104,6 +112,7 @@ body {
 /* Asegurar alineación del dropdown */
 .navbar-nav > li {
   position: relative;
+  margin: 0 15px; /* Agrega espacio entre elementos */
 }
 
 /* Mostrar el submenú cuando se pasa el cursor */
@@ -112,6 +121,7 @@ body {
   opacity: 1;
   visibility: visible;
 }
+
 
 /* ===== ESTILOS GENERALES ===== */
 body {
@@ -162,6 +172,8 @@ a:visited {
 a:active {
   color: #4A2C31;
 }
+
+
 /* ===== Estilos para listas numeradas (ol) y listas con viñetas (ul) ===== */
 ol, ul {
   font-size: 20px !important; /* Aumenta el tamaño del texto */

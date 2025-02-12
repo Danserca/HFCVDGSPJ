@@ -11,7 +11,7 @@ output:
 
 /* ===== TABLA DE CONTENIDOS (TOC) ===== */
 .toc {
-  color: #1E293B !important; /* Azul oscuro */
+  color: #1E293B !important; /* Azul oscuro para coincidir con el navbar */
   font-weight: bold;
 }
 
@@ -19,17 +19,20 @@ output:
 .list-group-item.active:focus, 
 .list-group-item.active:hover {
     z-index: 2;
-    color: #FACC15 !important; /* Amarillo brillante */
+    color: #FACC15 !important; /* Amarillo brillante para contraste */
     background-color: #1E293B !important; /* Azul oscuro igual que la navbar */
-    border-color: #1E293B !important;
+    border-color: #1E293B !important; /* Consistente con el fondo */
 }
 
 /* ===== NAVBAR: Estilos generales ===== */
 .navbar {
   position: fixed; /* Fija la navbar en la parte superior */
+  display: flex;
+  justify-content: center; /* Centra todo el contenido de la navbar */
+  align-items: center;
+  width: 100%;
   top: 0;
   left: 0;
-  width: 100%; /* Ocupar todo el ancho */
   z-index: 1000; /* Asegurar que esté sobre otros elementos */
   background-color: #1E293B !important; /* Color de fondo */
   border-bottom: 3px solid #334155; /* Borde inferior */
@@ -40,17 +43,12 @@ body {
   padding-top: 70px; /* Ajustar el espacio superior según la altura de la navbar */
 }
 
-.navbar-collapse {
-  background-color: #1E293B;
-}
-
-
-/* Quitar cualquier degradado de fondo */
+/* Quitar cualquier degradado de fondo heredado del tema */
 .navbar-default {
   background-image: none !important;
 }
 
-/* Estilos de los enlaces en la navbar */
+/* Estilos de los enlaces de la barra de navegación */
 .navbar-default .navbar-nav > li > a {
   color: #E5E7EB !important; /* Texto gris claro */
   font-weight: bold !important;
@@ -61,14 +59,22 @@ body {
   transition: color 0.3s ease-in-out;
 }
 
-/* Efecto hover y focus en enlaces */
+/* Alinear la navbar correctamente */
+.navbar {
+  display: flex;
+  justify-content: center; /* Centra todo el contenido de la navbar */
+  align-items: center;
+  width: 100%;
+}
+
+/* Efecto al pasar el cursor */
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > li > a:focus {
   color: #FACC15 !important; /* Amarillo brillante */
   text-decoration: underline !important;
 }
 
-/* Estilo de enlaces activos */
+/* Enlace activo */
 .navbar-default .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .active > a:hover,
 .navbar-default .navbar-nav > .active > a:focus {
@@ -84,18 +90,12 @@ body {
   min-width: 200px;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
   position: absolute;
-  top: 100%; /* Desplegar justo debajo de la navbar */
-  left: 0; /* Alinear el dropdown a la izquierda */
-  text-align: left; /* Asegurar que el texto también esté alineado a la izquierda */
+  top: 100%;
+  left: 0; /* Alinea el dropdown a la izquierda */
+  text-align: left; /* Asegura que el texto también esté alineado a la izquierda */
 }
-
-/* Mantener la barra de navegación desplegable con el fondo adecuado */
 .navbar-collapse {
   background-color: #1E293B;
-  position: absolute; /* Evitar que empuje el contenido */
-  width: 100%;
-  top: 100%;
-  left: 0;
 }
 
 /* Estilos para los enlaces dentro del dropdown */
@@ -116,6 +116,7 @@ body {
 /* Asegurar alineación del dropdown */
 .navbar-nav > li {
   position: relative;
+  margin: 0 15px; /* Agrega espacio entre elementos */
 }
 
 /* Mostrar el submenú cuando se pasa el cursor */
@@ -124,6 +125,7 @@ body {
   opacity: 1;
   visibility: visible;
 }
+
 
 /* ===== ESTILOS GENERALES ===== */
 body {
@@ -175,36 +177,23 @@ a:active {
   color: #4A2C31;
 }
 
+
 /* ===== Estilos para listas numeradas (ol) y listas con viñetas (ul) ===== */
 ol, ul {
-  font-size: 20px !important;
-  line-height: 1.8 !important;
-  color: #2E3A46 !important;
+  font-size: 20px !important; /* Aumenta el tamaño del texto */
+  line-height: 1.8 !important; /* Mejora el espaciado entre líneas */
+  color: #2E3A46 !important; /* Mantiene el color adecuado */
 }
 
-/* Asegurar que los elementos de la lista también adopten el nuevo tamaño */
+/* Asegurar que los elementos de la lista (li) también adopten el nuevo tamaño */
 ol li, ul li {
-  font-size: 20px !important;
-  margin-bottom: 10px !important;
+  font-size: 20px !important; /* Tamaño grande */
+  margin-bottom: 10px !important; /* Espacio entre elementos */
 }
 
-/* ===== ESTILO PARA IMAGENES ===== */
-.full-width-container {
-    position: relative;
-    width: 100%;
-    height: auto;
-    overflow: hidden;
-    opacity: 0.5;
-}
-
-.full-width-image {
-    width: 100%;
-    height: auto;
-    display: block;
-    opacity: 0.5;
-}
 
 </style>
+
 
 <div style="color:#8B5F65;"></div>
 

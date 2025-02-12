@@ -1,6 +1,5 @@
 ---
 title: "Comunicación escrita ciudadana efectiva"
-date: "`r format(Sys.Date(), '%d de %B de %Y')`"
 output:
   html_document:
     toc: true
@@ -12,7 +11,6 @@ output:
 ---
 
 <style type="text/css">
-
 
 /* ===== TABLA DE CONTENIDOS (TOC) ===== */
 .toc {
@@ -28,12 +26,16 @@ output:
     background-color: #1E293B !important; /* Azul oscuro igual que la navbar */
     border-color: #1E293B !important; /* Consistente con el fondo */
 }
+
 /* ===== NAVBAR: Estilos generales ===== */
 .navbar {
   position: fixed; /* Fija la navbar en la parte superior */
+  display: flex;
+  justify-content: center; /* Centra todo el contenido de la navbar */
+  align-items: center;
+  width: 100%;
   top: 0;
   left: 0;
-  width: 100%; /* Ocupar todo el ancho */
   z-index: 1000; /* Asegurar que esté sobre otros elementos */
   background-color: #1E293B !important; /* Color de fondo */
   border-bottom: 3px solid #334155; /* Borde inferior */
@@ -43,12 +45,6 @@ output:
 body {
   padding-top: 70px; /* Ajustar el espacio superior según la altura de la navbar */
 }
-
-.navbar-collapse {
-  background-color: #1E293B;
-}
-
-
 
 /* Quitar cualquier degradado de fondo heredado del tema */
 .navbar-default {
@@ -64,6 +60,14 @@ body {
   padding: 12px 18px !important;
   text-decoration: none !important;
   transition: color 0.3s ease-in-out;
+}
+
+/* Alinear la navbar correctamente */
+.navbar {
+  display: flex;
+  justify-content: center; /* Centra todo el contenido de la navbar */
+  align-items: center;
+  width: 100%;
 }
 
 /* Efecto al pasar el cursor */
@@ -115,6 +119,7 @@ body {
 /* Asegurar alineación del dropdown */
 .navbar-nav > li {
   position: relative;
+  margin: 0 15px; /* Agrega espacio entre elementos */
 }
 
 /* Mostrar el submenú cuando se pasa el cursor */
@@ -123,7 +128,6 @@ body {
   opacity: 1;
   visibility: visible;
 }
-
 
 
 /* ===== ESTILOS GENERALES ===== */
@@ -176,6 +180,7 @@ a:active {
   color: #4A2C31;
 }
 
+
 /* ===== Estilos para listas numeradas (ol) y listas con viñetas (ul) ===== */
 ol, ul {
   font-size: 20px !important; /* Aumenta el tamaño del texto */
@@ -193,13 +198,6 @@ ol li, ul li {
 </style>
 
 <div style="color:#8B5F65;"></div>
-
-
-
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(message=FALSE,warning=FALSE, cache=TRUE)
-```
-**Nota:** Iremos incluyendo los materiales que nos compartan.
 
 
 # 1. Guía de buenas prácticas en escritura

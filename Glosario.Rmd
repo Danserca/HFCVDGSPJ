@@ -1,6 +1,5 @@
 ---
 title: "Glosario"
-date: "`r format(Sys.Date(), '%d de %B de %Y')`"
 output:
   html_document:
     toc: false
@@ -30,12 +29,14 @@ output:
 }
 
 /* ===== NAVBAR: Estilos generales ===== */
-/* ===== FIJAR LA NAVBAR EN LA PARTE SUPERIOR ===== */
 .navbar {
   position: fixed; /* Fija la navbar en la parte superior */
+  display: flex;
+  justify-content: center; /* Centra todo el contenido de la navbar */
+  align-items: center;
+  width: 100%;
   top: 0;
   left: 0;
-  width: 100%; /* Ocupar todo el ancho */
   z-index: 1000; /* Asegurar que esté sobre otros elementos */
   background-color: #1E293B !important; /* Color de fondo */
   border-bottom: 3px solid #334155; /* Borde inferior */
@@ -45,8 +46,6 @@ output:
 body {
   padding-top: 70px; /* Ajustar el espacio superior según la altura de la navbar */
 }
-
-
 
 /* Quitar cualquier degradado de fondo heredado del tema */
 .navbar-default {
@@ -62,6 +61,14 @@ body {
   padding: 12px 18px !important;
   text-decoration: none !important;
   transition: color 0.3s ease-in-out;
+}
+
+/* Alinear la navbar correctamente */
+.navbar {
+  display: flex;
+  justify-content: center; /* Centra todo el contenido de la navbar */
+  align-items: center;
+  width: 100%;
 }
 
 /* Efecto al pasar el cursor */
@@ -87,18 +94,12 @@ body {
   min-width: 200px;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
   position: absolute;
-  top: 100%; /* Desplegar justo debajo de la navbar */
-  left: 0; /* Alinear el dropdown a la izquierda */
-  text-align: left; /* Asegurar que el texto también esté alineado a la izquierda */
+  top: 100%;
+  left: 0; /* Alinea el dropdown a la izquierda */
+  text-align: left; /* Asegura que el texto también esté alineado a la izquierda */
 }
-
-/* Mantener la barra de navegación desplegable con el fondo adecuado */
 .navbar-collapse {
   background-color: #1E293B;
-  position: absolute; /* Evitar que empuje el contenido */
-  width: 100%;
-  top: 100%;
-  left: 0;
 }
 
 /* Estilos para los enlaces dentro del dropdown */
@@ -119,6 +120,7 @@ body {
 /* Asegurar alineación del dropdown */
 .navbar-nav > li {
   position: relative;
+  margin: 0 15px; /* Agrega espacio entre elementos */
 }
 
 /* Mostrar el submenú cuando se pasa el cursor */
@@ -126,37 +128,6 @@ body {
   display: block;
   opacity: 1;
   visibility: visible;
-}
-
-/* ===== ESTILOS GENERALES ===== */
-body {
-  color: #2E3A46 !important;
-  font-family: "Arial", sans-serif !important;
-}
-
-/* Estilos del título principal */
-h1.title {
-  text-align: center;
-  font-weight: bold;
-  width: 100%;
-  margin: 20px 0;
-  font-size: 42px;
-  color: #0F172A;
-}
-
-/* Estilos para subtítulos */
-h2, h3 {
-  color: #001F3F;
-  font-weight: bold;
-  font-size: 22px;
-  line-height: 1.4;
-}
-
-/* Color y tamaño de los párrafos */
-p {
-  color: #354A5F !important;
-  font-size: 18px;
-  line-height: 1.6;
 }
 
 
@@ -209,6 +180,8 @@ a:visited {
 a:active {
   color: #4A2C31;
 }
+
+
 /* ===== Estilos para listas numeradas (ol) y listas con viñetas (ul) ===== */
 ol, ul {
   font-size: 20px !important; /* Aumenta el tamaño del texto */
@@ -222,7 +195,9 @@ ol li, ul li {
   margin-bottom: 10px !important; /* Espacio entre elementos */
 }
 
+
 </style>
+
 
 <div style="color:#8B5F65;"></div>
 

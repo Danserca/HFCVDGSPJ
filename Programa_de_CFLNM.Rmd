@@ -1,6 +1,5 @@
 ---
 title: "Recursos"
-date: "`r format(Sys.Date(), '%d de %B de %Y')`"
 output:
   html_document:
     toc: true
@@ -31,9 +30,12 @@ output:
 /* ===== NAVBAR: Estilos generales ===== */
 .navbar {
   position: fixed; /* Fija la navbar en la parte superior */
+  display: flex;
+  justify-content: center; /* Centra todo el contenido de la navbar */
+  align-items: center;
+  width: 100%;
   top: 0;
   left: 0;
-  width: 100%; /* Ocupar todo el ancho */
   z-index: 1000; /* Asegurar que esté sobre otros elementos */
   background-color: #1E293B !important; /* Color de fondo */
   border-bottom: 3px solid #334155; /* Borde inferior */
@@ -58,6 +60,14 @@ body {
   padding: 12px 18px !important;
   text-decoration: none !important;
   transition: color 0.3s ease-in-out;
+}
+
+/* Alinear la navbar correctamente */
+.navbar {
+  display: flex;
+  justify-content: center; /* Centra todo el contenido de la navbar */
+  align-items: center;
+  width: 100%;
 }
 
 /* Efecto al pasar el cursor */
@@ -109,6 +119,7 @@ body {
 /* Asegurar alineación del dropdown */
 .navbar-nav > li {
   position: relative;
+  margin: 0 15px; /* Agrega espacio entre elementos */
 }
 
 /* Mostrar el submenú cuando se pasa el cursor */
@@ -186,30 +197,8 @@ ol li, ul li {
 
 </style>
 
-<div style="color:#75124D;"></div>
-
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(message=FALSE,warning=FALSE, cache=TRUE)
-```
-
-# Descripción general y objetivos del Hub
-
-
-Este sitio provee de herramientas, guías, manuales y recursos para la visualización y comunicación efectiva y ciudadada de datos de gobierno. 
-
-
-# Objetivos
-
-- Programación básica en R: uso de variables, paquetes, espacios de trabajo...  
-- Transformación de datos: procesamiento de archivos de datos para un análisis deseado.  
-- Visualización de datos: representación gráfica.  
-- Comunicación de la investigación: cómo utilizar los scripts de R Markdown para crear manuscritos correctamente referenciados para comunicar la investigación.  
-- Investigación reproducible: principios de la ciencia abierta, incluidas herramientas para compartir datos, compartir manuscritos, diseños de investigación, compartir métodos.
-
 
 <br><br>
-
-<hr style="border: 3px solid#75124D;" />
 
 
 # ¿Cómo seleccionar la gráfica adecuada para tu análisis?
