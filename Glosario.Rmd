@@ -200,7 +200,7 @@ ol li, ul li {
 
 
 <div style="color:#8B5F65;"></div>
-
+<br><br>
 
 # 📖 Glosario de términos
 

@@ -4,8 +4,8 @@ output:
   html_document:
     theme: spacelab
 ---
+<img src="images/logo.png" alt="Logo" class="full-width-image" style="display: block; margin: 0 auto; width: 100%; opacity: 0.3;">
 
-<img src="images/logo.png" alt="Logo" class="full-width-container">
 
 <style type="text/css">
 

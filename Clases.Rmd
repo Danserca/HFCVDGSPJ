@@ -197,7 +197,8 @@ ol li, ul li {
 
 </style>
 
-<div style="color:#8B5F65;"></div>
+
+<br><br>
 
 
 # 1. Guía de buenas prácticas en escritura
