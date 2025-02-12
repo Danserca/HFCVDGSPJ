@@ -48,6 +48,8 @@ body {
   background-color: #1E293B;
 }
 
+
+
 /* Quitar cualquier degradado de fondo heredado del tema */
 .navbar-default {
   background-image: none !important;
@@ -91,6 +93,9 @@ body {
   left: 0; /* Alinea el dropdown a la izquierda */
   text-align: left; /* Asegura que el texto también esté alineado a la izquierda */
 }
+.navbar-collapse {
+  background-color: #1E293B;
+}
 
 /* Estilos para los enlaces dentro del dropdown */
 .navbar-nav .dropdown-menu > li > a {
@@ -118,6 +123,7 @@ body {
   opacity: 1;
   visibility: visible;
 }
+
 
 
 /* ===== ESTILOS GENERALES ===== */
