@@ -216,9 +216,9 @@ Este recurso se centra en la **escritura científica**, no en la divulgación ci
 
 ### Las 6 reglas de Orwell  
 
-1. Nunca uses una metáfora, comparación u otra figura retórica que estés acostumbrado a ver impresa.  
+1. Nunca uses una metáfora, comparación u otra figura retórica que estés acostumbrado a ver en periódicos, revistas...  
 2. Nunca uses una palabra larga cuando una corta sea suficiente.  
-3. Si es posible eliminar una palabra, elimínala siempre.  
+3. Si es posible eliminar una palabra, elimínala.  
 4. Nunca uses la voz pasiva cuando puedas usar la activa.  
 5. Nunca uses una frase extranjera, una palabra científica o un término técnico si puedes pensar en un equivalente en español cotidiano.  
 6. Rompe cualquiera de estas reglas antes de decir algo completamente bárbaro.  

@@ -184,19 +184,6 @@ ol li, ul li {
 knitr::opts_chunk$set(message=FALSE,warning=FALSE, cache=TRUE)
 ```
 
-
-<br><br>
-**Nota:** Este sitio es colaborativo y está en construcción continua, envíanos tus propuestas de contenido: videos, tutoriales, materiales, libros, reseñas.
-
-2024 | 8 | 07 Última actualización: `r Sys.Date()`  
-
-- **Elaboró:** Dra. Daniela Serrano Campos   
-- **Email:** [daniela.serrano@inegi.org.mx](mailto:daniela.serrano@inegi.org.mx) (por favor pon ‘HFACVDG’ en el asunto)   
-
-<br><br>
-
-<hr style="border: 3px solid#75124D;" />
-
 # Descripción general y objetivos del Hub
 
 

@@ -193,7 +193,7 @@ ol li, ul li {
 
 Este sitio web es una **herramienta interna colaborativa**, diseñada para fortalecer las capacidades del equipo en la **comunicación, visualización y ciudadanización de las estadísticas de gobierno**.  
 
-No sustituye, contradice ni desafía los [**manuales de identidad**](https://sc.inegi.org.mx/repositorioNormateca/MII_2024.pdf) o el [**sistema visual institucional**](https://intranet.inegi.org.mx/docs/Imagen_Institucional/sistema_visual.pdf), cuyo uso es obligatorio. Su propósito es complementar estos lineamientos, proporcionando orientación para mejorar la efectividad en la **comunicación visual y escrita**.  
+No sustituye, contradice ni desafía el [**manual de identidad**](https://sc.inegi.org.mx/repositorioNormateca/MII_2024.pdf) ni el [**sistema visual institucional**](https://intranet.inegi.org.mx/docs/Imagen_Institucional/sistema_visual.pdf), cuyo uso es obligatorio. Su propósito es complementar estos lineamientos, proporcionando orientación para mejorar la efectividad y ciudadanización de la **comunicación visual y escrita**.  
    
 
 Inspirado en diversas iniciativas, este espacio busca crear una **comunidad activa y comprometida** con el aprendizaje, la actualización constante y la mejora de la difusión de datos hacia la sociedad.
@@ -237,12 +237,20 @@ Al unirte a esta plataforma, accedes a:
 🤝 **Acceso a una comunidad de aprendizaje**, donde podrás compartir experiencias, resolver dudas y fortalecer tus habilidades  
 💡 **Inspiración y nuevas ideas** para mejorar la difusión de los resultados estadísticos  
 
-
-
-Este portal representa nuestro compromiso con el **fortalecimiento de las estadísticas de gobierno**, con el propósito de hacerlas más cercanas, útiles y significativas para la ciudadanía.  
-
 > **Juntas y juntos, construimos un puente claro, efectivo y eficiente entre la información y acción.**  
 
-Disfruta y envía recomendaciones a este espacio
+¡Disfruta y envía recomendaciones a este espacio!
+
+**Nota:** Envíanos tus propuestas de contenido: videos, tutoriales, materiales, libros, reseñas.
+
+- **Email:** [daniela.serrano@inegi.org.mx](mailto:daniela.serrano@inegi.org.mx) (por favor pon ‘HUB’ en el asunto)         
+
+<br>
+**Elaboró:** Dra. Daniela Serrano Campos      
+Última actualización: `r Sys.Date()`    
+
+ 
+
+
 
 
