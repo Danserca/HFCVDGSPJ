@@ -339,50 +339,86 @@ $(document).ready(function () {
   text-decoration: underline !important;
 }
 
-/* ===== MENÚ DESPLEGABLE ===== */
+/* ===== MENÚ DESPLEGABLE ALINEADO A LA IZQUIERDA ===== */
 .navbar-nav .dropdown-menu {
   background-color: #1E293B !important; /* Fondo oscuro */
   border: none !important;
   padding: 5px 0 !important;
   min-width: 200px;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  position: absolute;
+  top: 100%; /* Desplegar justo debajo de la navbar */
+  left: 0; /* Alinear el dropdown a la izquierda */
+  text-align: left; /* Asegurar que el texto también esté alineado a la izquierda */
+}
+
+/* Mantener la barra de navegación desplegable con el fondo adecuado */
+.navbar-collapse {
+  background-color: #1E293B;
+  position: absolute; /* Evitar que empuje el contenido */
+  width: 100%;
+  top: 100%;
+  left: 0;
 }
 
 /* Estilos para los enlaces dentro del dropdown */
 .navbar-nav .dropdown-menu > li > a {
-  color: #E5E7EB !important;
+  color: #E5E7EB !important; /* Color de texto */
   font-size: 14px !important;
   padding: 10px 15px !important;
   transition: background 0.3s ease-in-out;
+  display: block; /* Asegura que cada enlace ocupe toda la línea */
 }
 
 /* Hover en el dropdown */
 .navbar-nav .dropdown-menu > li > a:hover {
-  background-color: #334155 !important;
-  color: #FACC15 !important;
+  background-color: #334155 !important; /* Gris azulado más oscuro */
+  color: #FACC15 !important; /* Amarillo brillante */
 }
 
-/* Asegurar alineación y visibilidad del dropdown */
+/* Asegurar alineación del dropdown */
 .navbar-nav > li {
   position: relative;
 }
 
-.navbar-nav .dropdown-menu {
-  position: absolute;
-  top: 100%;
-  left: 0;
-  display: none;
-  opacity: 0;
-  visibility: hidden;
-  transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
-}
-
-/* Mostrar dropdown cuando el cursor pasa sobre el elemento padre */
+/* Mostrar el submenú cuando se pasa el cursor */
 .navbar-nav > li:hover .dropdown-menu {
   display: block;
   opacity: 1;
   visibility: visible;
 }
+
+/* ===== ESTILOS GENERALES ===== */
+body {
+  color: #2E3A46 !important;
+  font-family: "Arial", sans-serif !important;
+}
+
+/* Estilos del título principal */
+h1.title {
+  text-align: center;
+  font-weight: bold;
+  width: 100%;
+  margin: 20px 0;
+  font-size: 42px;
+  color: #0F172A;
+}
+
+/* Estilos para subtítulos */
+h2, h3 {
+  color: #001F3F;
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 1.4;
+}
+
+/* Color y tamaño de los párrafos */
+p {
+  color: #354A5F !important;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
 
 /* ===== ESTILOS GENERALES ===== */
 body {
