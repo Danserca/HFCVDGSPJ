@@ -346,12 +346,27 @@ div.tocify {
 
 
 <h1 class="title toc-ignore">Recursos</h1>
-<h4 class="date">11 de febrero de 2025</h4>
+<h4 class="date">12 de febrero de 2025</h4>
 
 </div>
 
 
 <style type="text/css">
+
+/* ===== TABLA DE CONTENIDOS (TOC) ===== */
+.toc {
+  color: #1E293B !important; /* Azul oscuro para coincidir con el navbar */
+  font-weight: bold;
+}
+
+.list-group-item.active, 
+.list-group-item.active:focus, 
+.list-group-item.active:hover {
+    z-index: 2;
+    color: #FACC15 !important; /* Amarillo brillante para contraste */
+    background-color: #1E293B !important; /* Azul oscuro igual que la navbar */
+    border-color: #1E293B !important; /* Consistente con el fondo */
+}
 
 /* ===== NAVBAR: Estilos generales ===== */
 .navbar {
@@ -395,50 +410,46 @@ div.tocify {
   text-decoration: underline !important;
 }
 
-/* ===== MENÚ DESPLEGABLE ===== */
+/* ===== MENÚ DESPLEGABLE ALINEADO A LA IZQUIERDA ===== */
 .navbar-nav .dropdown-menu {
   background-color: #1E293B !important; /* Fondo oscuro */
   border: none !important;
   padding: 5px 0 !important;
   min-width: 200px;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  position: absolute;
+  top: 100%;
+  left: 0; /* Alinea el dropdown a la izquierda */
+  text-align: left; /* Asegura que el texto también esté alineado a la izquierda */
 }
 
 /* Estilos para los enlaces dentro del dropdown */
 .navbar-nav .dropdown-menu > li > a {
-  color: #E5E7EB !important;
+  color: #E5E7EB !important; /* Color de texto */
   font-size: 14px !important;
   padding: 10px 15px !important;
   transition: background 0.3s ease-in-out;
+  display: block; /* Asegura que cada enlace ocupe toda la línea */
 }
 
 /* Hover en el dropdown */
 .navbar-nav .dropdown-menu > li > a:hover {
-  background-color: #334155 !important;
-  color: #FACC15 !important;
+  background-color: #334155 !important; /* Gris azulado más oscuro */
+  color: #FACC15 !important; /* Amarillo brillante */
 }
 
-/* Asegurar alineación y visibilidad del dropdown */
+/* Asegurar alineación del dropdown */
 .navbar-nav > li {
   position: relative;
 }
 
-.navbar-nav .dropdown-menu {
-  position: absolute;
-  top: 100%;
-  left: 0;
-  display: none;
-  opacity: 0;
-  visibility: hidden;
-  transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
-}
-
-/* Mostrar dropdown cuando el cursor pasa sobre el elemento padre */
+/* Mostrar el submenú cuando se pasa el cursor */
 .navbar-nav > li:hover .dropdown-menu {
   display: block;
   opacity: 1;
   visibility: visible;
 }
+
 
 /* ===== ESTILOS GENERALES ===== */
 body {
@@ -504,6 +515,7 @@ ol li, ul li {
   margin-bottom: 10px !important; /* Espacio entre elementos */
 }
 
+
 </style>
 <div style="color:#75124D;">
 
@@ -511,7 +523,7 @@ ol li, ul li {
 <p><br><br> <strong>Nota:</strong> Este sitio es colaborativo y está en
 construcción continua, envíanos tus propuestas de contenido: videos,
 tutoriales, materiales, libros, reseñas.</p>
-<p>2024 | 8 | 07 Última actualización: 2025-02-11</p>
+<p>2024 | 8 | 07 Última actualización: 2025-02-12</p>
 <ul>
 <li><strong>Elaboró:</strong> Dra. Daniela Serrano Campos<br />
 </li>
@@ -613,7 +625,7 @@ mejores en esta habilidad</a>.</li>
 <!-- ### third level header -->
 <!-- Here's an even lower level header -->
 <!-- # My second post (note the order) -->
-<!-- 2018 | 7 | 23 Last compiled: 2025-02-11 -->
+<!-- 2018 | 7 | 23 Last compiled: 2025-02-12 -->
 <!-- I'm writing this tutorial going from the top down. And, this is how it will be printed. So, notice the second post is second in the list. If you want your most recent post to be at the top, then make a new post starting at the top. If you want the oldest first, do, then keep adding to the bottom -->
 <p><br><br></p>
 <hr style="border: 3px solid#75124D;" />

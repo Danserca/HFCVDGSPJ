@@ -3,8 +3,8 @@ title: "Glosario"
 date: "`r format(Sys.Date(), '%d de %B de %Y')`"
 output:
   html_document:
-    toc: true
-    toc_float: true
+    toc: false
+    toc_float: false
     collapsed: false
     number_sections: false
     toc_depth: 1
@@ -13,6 +13,21 @@ output:
 ---
 
 <style type="text/css">
+
+/* ===== TABLA DE CONTENIDOS (TOC) ===== */
+.toc {
+  color: #1E293B !important; /* Azul oscuro para coincidir con el navbar */
+  font-weight: bold;
+}
+
+.list-group-item.active, 
+.list-group-item.active:focus, 
+.list-group-item.active:hover {
+    z-index: 2;
+    color: #FACC15 !important; /* Amarillo brillante para contraste */
+    background-color: #1E293B !important; /* Azul oscuro igual que la navbar */
+    border-color: #1E293B !important; /* Consistente con el fondo */
+}
 
 /* ===== NAVBAR: Estilos generales ===== */
 .navbar {
