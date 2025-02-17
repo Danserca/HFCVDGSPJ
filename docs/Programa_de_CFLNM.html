@@ -573,6 +573,85 @@ excelente punto de partida.</p>
 <p><br><br></p>
 <hr style="border: 3px solid#75124D;" />
 </div>
+<div id="qué-es-un-gráfico-de-barras-apiladas" class="section level2">
+<h2>¿Qué es un gráfico de barras apiladas?</h2>
+<p>Un gráfico de barras apiladas no es lo mismo que un gráfico de barras
+estándar. Mientras que un gráfico de barras tradicional muestra una sola
+variable categórica en forma de barras, un gráfico de barras apiladas
+muestra dos variables categóricas. La primera variable se representa a
+lo largo de toda la longitud de la barra, y la segunda como secciones
+apiladas dentro de cada barra.</p>
+<div id="ejemplo" class="section level3">
+<h3>Ejemplo</h3>
+<p>Supongamos que tenemos los niveles de producción total y las
+proyecciones de varios tipos de dispositivos: tabletas, teléfonos y
+laptops. Un gráfico de barras estándar mostraría la producción total,
+pero si queremos visualizar también la contribución de cada dispositivo,
+podemos utilizar un gráfico de barras apiladas.</p>
+</div>
+<div id="cuándo-usar-gráficos-de-barras-apiladas"
+class="section level3">
+<h3>¿Cuándo usar gráficos de barras apiladas?</h3>
+<p>Los gráficos de barras apiladas son útiles cuando se necesita mostrar
+tanto el total general como la distribución de los subcomponentes. Por
+ejemplo, si queremos comparar la producción total de dispositivos a lo
+largo de varios años y también la participación de cada tipo de
+dispositivo, un gráfico de barras apiladas es adecuado.</p>
+<p><img src="Programa_de_CFLNM_files/figure-html/unnamed-chunk-1-1.png" width="672" /></p>
+</div>
+<div id="cuándo-no-usar-gráficos-de-barras-apiladas"
+class="section level3">
+<h3>¿Cuándo no usar gráficos de barras apiladas?</h3>
+<p>No se recomienda utilizar gráficos de barras apiladas si el objetivo
+principal es comparar subcomponentes entre las barras, ya que las
+categorías que no se encuentran en la base son más difíciles de
+comparar.</p>
+</div>
+<div id="variaciones-de-gráficos-de-barras-apiladas"
+class="section level3">
+<h3>Variaciones de gráficos de barras apiladas</h3>
+<ul>
+<li><strong>Gráfico de barras apiladas al 100%</strong>: Puedes optar
+por visualizar porcentajes en lugar de valores absolutos, extendiendo
+las barras de 0 a 100%. Esto facilita la comparación de categorías entre
+barras gracias a un punto de partida consistente. Por ejemplo, al
+enfatizar la producción de tabletas y teléfonos, se pueden colocar una
+categoría en la parte superior y otra en la inferior para observar
+cambios en proporción.</li>
+<li><strong>Gráfico de barras apiladas horizontales</strong>: Cualquier
+versión de un gráfico de barras apiladas puede orientarse de forma
+vertical u horizontal. Aunque el tiempo suele presentarse de izquierda a
+derecha, la orientación horizontal puede ser útil para otros tipos de
+variables.</li>
+</ul>
+</div>
+<div id="buenas-prácticas" class="section level3">
+<h3>Buenas prácticas</h3>
+<ul>
+<li>Coloca la <strong>categoría más importante en la base</strong> para
+facilitar su comparación a lo largo de las barras. En el ejemplo
+adjunto, se muestra cómo colocar una categoría como “Tabletas” en la
+base facilita ver su aumento.</li>
+</ul>
+</div>
+<div id="ejemplo-con-r" class="section level3">
+<h3>Ejemplo con R</h3>
+<p>Este código genera un gráfico similar al de la imagen, donde colocar
+una categoría clave en la base facilita la interpretación.</p>
+</div>
+<div id="comparación-de-gráficos" class="section level3">
+<h3>Comparación de gráficos</h3>
+</div>
+</div>
+<div id="section" class="section level2">
+<h2><img src="Programa_de_CFLNM_files/figure-html/unnamed-chunk-2-1.png" width="672" /></h2>
+<p>Este documento se basó en el artículo original <a
+href="https://www.storytellingwithdata.com/blog/stacked-bars">What is a
+stacked bar chart?</a> de Storytelling with Data, traducido y adaptado
+por Daniela Serrano Campos.</p>
+<p><br><br></p>
+<hr style="border: 3px solid#75124D;" />
+</div>
 </div>
 <div id="lecturas" class="section level1">
 <h1>Lecturas</h1>
@@ -600,7 +679,7 @@ mejores en esta habilidad</a>.</li>
 <!-- ### third level header -->
 <!-- Here's an even lower level header -->
 <!-- # My second post (note the order) -->
-<!-- 2018 | 7 | 23 Last compiled: 2025-02-12 -->
+<!-- 2018 | 7 | 23 Last compiled: 2025-02-17 -->
 <!-- I'm writing this tutorial going from the top down. And, this is how it will be printed. So, notice the second post is second in the list. If you want your most recent post to be at the top, then make a new post starting at the top. If you want the oldest first, do, then keep adding to the bottom -->
 <p><br><br></p>
 <hr style="border: 3px solid#75124D;" />
@@ -614,7 +693,7 @@ un histograma. Puedes hacer esto aquí mismo usando un bloque de código
 r, como este:</p>
 <pre class="r"><code>muestras &lt;- rnorm(100, mean=0, sd=1)
 hist(muestras)</code></pre>
-<p><img src="Programa_de_CFLNM_files/figure-html/unnamed-chunk-1-1.png" width="672" /></p>
+<p><img src="Programa_de_CFLNM_files/figure-html/unnamed-chunk-3-1.png" width="672" /></p>
 <!-- When you knit this R Markdown document, you will see that the histogram is printed to the page, along with the R code. This document can be set up to hide the R code in the webpage, just delete the comment (hashtag), from the cold folding option in the yaml header up top. For purposes of letting yourself see the code, and me see the code, best to keep it the way that it is. You learn all of these things and more can be customized in each R code block. -->
 <!-- # The big idea -->
 <!-- Use this lab journal to record what you do in R. This way I will be able to see what you are doing and help you along the way. You will also be creating a repository of all the things you do. You can make posts about everything. Learning specific things in R (project unrelated), and doing things for the project that we will discuss at the beginning of the Fall semester. You can get started now by fiddling around with googling things, and trying stuff out in R. I've placed some helpful starting links in the links page on this website -->

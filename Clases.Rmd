@@ -1,5 +1,5 @@
 ---
-title: "Comunicación escrita ciudadana efectiva"
+title: "Comunicación escrita efectiva"
 output:
   html_document:
     toc: true

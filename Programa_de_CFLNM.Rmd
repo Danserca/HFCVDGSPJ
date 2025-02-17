@@ -230,6 +230,93 @@ ol li, ul li {
   </a>
 </div>
 
+
+<br><br>
+
+<hr style="border: 3px solid#75124D;" />
+
+
+## ¿Qué es un gráfico de barras apiladas?
+
+Un gráfico de barras apiladas no es lo mismo que un gráfico de barras estándar. Mientras que un gráfico de barras tradicional muestra una sola variable categórica en forma de barras, un gráfico de barras apiladas muestra dos variables categóricas. La primera variable se representa a lo largo de toda la longitud de la barra, y la segunda como secciones apiladas dentro de cada barra.
+
+### Ejemplo
+
+Supongamos que tenemos los niveles de producción total y las proyecciones de varios tipos de dispositivos: tabletas, teléfonos y laptops. Un gráfico de barras estándar mostraría la producción total, pero si queremos visualizar también la contribución de cada dispositivo, podemos utilizar un gráfico de barras apiladas.
+
+### ¿Cuándo usar gráficos de barras apiladas?
+
+Los gráficos de barras apiladas son útiles cuando se necesita mostrar tanto el total general como la distribución de los subcomponentes. Por ejemplo, si queremos comparar la producción total de dispositivos a lo largo de varios años y también la participación de cada tipo de dispositivo, un gráfico de barras apiladas es adecuado.
+
+```{r, echo=FALSE}
+library(ggplot2)
+
+datos <- data.frame(
+  anio = rep(2018:2023, each = 3),
+  dispositivo = rep(c("Tabletas", "Teléfonos", "Laptops"), times = 6),
+  produccion = c(500, 1500, 800, 450, 1400, 750, 400, 1200, 700, 600, 1600, 850, 650, 1700, 900, 700, 1800, 950)
+)
+
+ggplot(datos, aes(x = factor(anio), y = produccion, fill = dispositivo)) +
+  geom_bar(stat = "identity") +
+  labs(title = "Producción de dispositivos", x = "Año", y = "Producción") +
+  theme_minimal()
+```
+
+### ¿Cuándo no usar gráficos de barras apiladas?
+
+No se recomienda utilizar gráficos de barras apiladas si el objetivo principal es comparar subcomponentes entre las barras, ya que las categorías que no se encuentran en la base son más difíciles de comparar.
+
+### Variaciones de gráficos de barras apiladas
+
+- **Gráfico de barras apiladas al 100%**: Puedes optar por visualizar porcentajes en lugar de valores absolutos, extendiendo las barras de 0 a 100%. Esto facilita la comparación de categorías entre barras gracias a un punto de partida consistente. Por ejemplo, al enfatizar la producción de tabletas y teléfonos, se pueden colocar una categoría en la parte superior y otra en la inferior para observar cambios en proporción.
+- **Gráfico de barras apiladas horizontales**: Cualquier versión de un gráfico de barras apiladas puede orientarse de forma vertical u horizontal. Aunque el tiempo suele presentarse de izquierda a derecha, la orientación horizontal puede ser útil para otros tipos de variables.
+
+### Buenas prácticas
+- Coloca la **categoría más importante en la base** para facilitar su comparación a lo largo de las barras. En el ejemplo adjunto, se muestra cómo colocar una categoría como "Tabletas" en la base facilita ver su aumento.
+
+### Ejemplo con R
+Este código genera un gráfico similar al de la imagen, donde colocar una categoría clave en la base facilita la interpretación.
+
+### Comparación de gráficos
+````{r, echo=FALSE, message=FALSE, warning=FALSE}
+library(ggplot2)
+library(gridExtra)
+
+# Paleta de colores basada en la imagen proporcionada
+colores <- c("#003057", "#00BFB3", "#A590FF", "#FFAC00", "#5FA48C", "#E600A9")
+
+datos <- data.frame(
+  anio = rep(2018:2023, each = 3),
+  dispositivo = rep(c("Tabletas", "Teléfonos", "Laptops"), times = 6),
+  produccion = c(500, 1500, 800, 450, 1400, 750, 400, 1200, 700, 600, 1600, 850, 650, 1700, 900, 700, 1800, 950)
+)
+
+datos2 <- datos
+datos2$dispositivo <- factor(datos2$dispositivo, levels = c("Tabletas", "Teléfonos", "Laptops"))
+
+datos3 <- datos
+datos3$dispositivo <- factor(datos3$dispositivo, levels = c("Laptops", "Teléfonos", "Tabletas"))
+
+g1 <- ggplot(datos2, aes(x = factor(anio), y = produccion, fill = dispositivo)) +
+  geom_bar(stat = "identity", position = "fill") +
+  scale_fill_manual(values = colores) +
+  labs(title = "Difícil ver el incremento de tabletas", x = "Año", y = "Proporción") +
+  theme_minimal()+
+  theme(legend.position = "bottom", legend.title = element_blank())
+
+g2 <- ggplot(datos3, aes(x = factor(anio), y = produccion, fill = dispositivo)) +
+  geom_bar(stat = "identity", position = "fill") +
+  scale_fill_manual(values = colores) +
+  labs(title = "Fácil ver el incremento de tabletas", x = "Año", y = "Proporción") +
+  theme_minimal()+
+  theme(legend.position = "bottom", legend.title = element_blank())
+
+grid.arrange(g1, g2, ncol = 2)
+````
+---
+Este documento se basó en el artículo original [What is a stacked bar chart?](https://www.storytellingwithdata.com/blog/stacked-bars) de Storytelling with Data, traducido y adaptado por Daniela Serrano Campos.
+
 <br><br>
 
 <hr style="border: 3px solid#75124D;" />
@@ -249,12 +336,9 @@ ol li, ul li {
 <!-- 2018 | 7 | 23 Last compiled: `r Sys.Date()` -->
 
 <!-- I'm writing this tutorial going from the top down. And, this is how it will be printed. So, notice the second post is second in the list. If you want your most recent post to be at the top, then make a new post starting at the top. If you want the oldest first, do, then keep adding to the bottom -->
-
 <br><br>
 
 <hr style="border: 3px solid#75124D;" />
-
-
 # Iremos agregando material de R, como el que se muestra:
 
 Tal vez quieras tomar una muestra de 100 números de una distribución normal con media = 0 y desviación estándar = 1, y luego quieres trazar un histograma. Puedes hacer esto aquí mismo usando un bloque de código r, como este:
