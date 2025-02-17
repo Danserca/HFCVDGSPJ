@@ -238,7 +238,7 @@ ol li, ul li {
 
 # ¿Qué es un gráfico de barras apiladas?
 
-Un gráfico de barras apiladas muestra más de una categoría, las categorías se apilan a lo largo o ancha de las barras, sean estas horizontales o vertiales.
+Un gráfico de barras apiladas permite mostrar la desagregación por alguna variable categórica. La primera (y principal) categoría se coloca en la base de la barra, mientras que las otras se apilan dentro de cada barra, sean horizontales o verticales.
 
 ### Ejemplo
 
