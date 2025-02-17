@@ -236,9 +236,9 @@ ol li, ul li {
 <hr style="border: 3px solid#75124D;" />
 
 
-## ¿Qué es un gráfico de barras apiladas?
+# ¿Qué es un gráfico de barras apiladas?
 
-Un gráfico de barras apiladas no es lo mismo que un gráfico de barras estándar. Mientras que un gráfico de barras tradicional muestra una sola variable categórica en forma de barras, un gráfico de barras apiladas muestra dos variables categóricas. La primera variable se representa a lo largo de toda la longitud de la barra, y la segunda como secciones apiladas dentro de cada barra.
+Un gráfico de barras apiladas muestra más de una categoría, las categorías se apilan a lo largo o ancha de las barras, sean estas horizontales o vertiales.
 
 ### Ejemplo
 
@@ -315,7 +315,7 @@ g2 <- ggplot(datos3, aes(x = factor(anio), y = produccion, fill = dispositivo)) 
 grid.arrange(g1, g2, ncol = 2)
 ````
 ---
-Este documento se basó en el artículo original [What is a stacked bar chart?](https://www.storytellingwithdata.com/blog/stacked-bars) de Storytelling with Data, traducido y adaptado por Daniela Serrano Campos.
+Este documento se basó en el artículo original [What is a stacked bar chart?](https://www.storytellingwithdata.com/blog/stacked-bars) de Storytelling with Data.
 
 <br><br>
 
