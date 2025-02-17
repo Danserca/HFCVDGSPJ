@@ -650,6 +650,41 @@ stacked bar chart?</a> de Storytelling with Data.</p>
 <hr style="border: 3px solid#75124D;" />
 </div>
 </div>
+<div id="el-problema-con-las-gráficas-de-pastel" class="section level1">
+<h1>El problema con las gráficas de pastel</h1>
+<p>Este documento adapta el contenido de “The issue with pie chart” de
+Data-to-Viz.com para explicar por qué las gráficas de pastel deben
+evitarse.</p>
+<p><img src="Programa_de_CFLNM_files/figure-html/unnamed-chunk-3-1.png" width="672" /></p>
+<p>Aunque las gráficas de pastel son populares para mostrar
+proporciones, presentan problemas de interpretación debido a la
+dificultad de los humanos para comparar ángulos.</p>
+<p><img src="Programa_de_CFLNM_files/figure-html/unnamed-chunk-4-1.png" width="672" /></p>
+<p>Al intentar comparar varias gráficas de pastel, se dificulta
+identificar qué grupo tiene el valor más alto o cómo evolucionan los
+valores entre grupos.</p>
+<div id="mejor-opción-gráfica-de-barras" class="section level2">
+<h2>Mejor opción: Gráfica de barras</h2>
+<p><img src="Programa_de_CFLNM_files/figure-html/unnamed-chunk-5-1.png" width="672" /></p>
+<p>La gráfica de barras revela diferencias claras entre los grupos y
+permite detectar patrones fácilmente, algo que no se logra con las
+gráficas de pastel.</p>
+<div id="errores-comunes-en-gráficas-de-pastel" class="section level3">
+<h3>Errores comunes en gráficas de pastel:</h3>
+<ul>
+<li>Uso de gráficos en 3D</li>
+<li>Leyendas separadas</li>
+<li>Porcentajes que no suman 100%</li>
+<li>Demasiados elementos</li>
+<li>Gráficas explotadas</li>
+</ul>
+<p>*Este documento se basó en el artículo original: <a
+href="https://www.data-to-viz.com/caveat/pie.html">The issue with pie
+chart - Data-to-Viz.com</a>** <br><br></p>
+<hr style="border: 3px solid#75124D;" />
+</div>
+</div>
+</div>
 <div id="lecturas" class="section level1">
 <h1>Lecturas</h1>
 <ul>
@@ -690,7 +725,7 @@ un histograma. Puedes hacer esto aquí mismo usando un bloque de código
 r, como este:</p>
 <pre class="r"><code>muestras &lt;- rnorm(100, mean=0, sd=1)
 hist(muestras)</code></pre>
-<p><img src="Programa_de_CFLNM_files/figure-html/unnamed-chunk-3-1.png" width="672" /></p>
+<p><img src="Programa_de_CFLNM_files/figure-html/unnamed-chunk-6-1.png" width="672" /></p>
 <!-- When you knit this R Markdown document, you will see that the histogram is printed to the page, along with the R code. This document can be set up to hide the R code in the webpage, just delete the comment (hashtag), from the cold folding option in the yaml header up top. For purposes of letting yourself see the code, and me see the code, best to keep it the way that it is. You learn all of these things and more can be customized in each R code block. -->
 <!-- # The big idea -->
 <!-- Use this lab journal to record what you do in R. This way I will be able to see what you are doing and help you along the way. You will also be creating a repository of all the things you do. You can make posts about everything. Learning specific things in R (project unrelated), and doing things for the project that we will discuss at the beginning of the Fall semester. You can get started now by fiddling around with googling things, and trying stuff out in R. I've placed some helpful starting links in the links page on this website -->

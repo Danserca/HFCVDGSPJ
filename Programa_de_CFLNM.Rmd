@@ -320,6 +320,110 @@ Este documento se basó en el artículo original [What is a stacked bar chart?](
 <br><br>
 
 <hr style="border: 3px solid#75124D;" />
+
+
+
+
+# El problema con las gráficas de pastel
+
+Este documento adapta el contenido de "The issue with pie chart" de Data-to-Viz.com para explicar por qué las gráficas de pastel deben evitarse.
+
+```{r, echo=FALSE, message=FALSE, warning=FALSE}
+# Cargar librerías necesarias
+library(ggplot2)
+library(dplyr)
+
+# Datos de ejemplo
+set.seed(123)
+data <- data.frame(
+  group = c("A", "B", "C", "D"),
+  value = c(30, 20, 25, 25)
+)
+
+# Gráfica de pastel
+pie <- ggplot(data, aes(x = "", y = value, fill = group)) +
+  geom_bar(stat = "identity", width = 1) +
+  coord_polar(theta = "y") +
+  labs(title = "Gráfica de pastel", x = NULL, y = NULL) +
+  theme_void()
+
+pie
+```
+
+Aunque las gráficas de pastel son populares para mostrar proporciones, presentan problemas de interpretación debido a la dificultad de los humanos para comparar ángulos.
+
+```{r, echo=FALSE, message=FALSE, warning=FALSE}
+# Gráficas de pastel adicionales
+set.seed(123)
+data <- data.frame(
+  group = c("A", "B", "C", "D"),
+  value = c(30, 20, 25, 25)
+)
+
+colores <- c("#003057", "#00BFB3", "#A590FF", "#FFAC00", "#5FA48C", "#E600A9")
+
+# Gráfica de pastel con colores personalizados
+pie <- ggplot(data, aes(x = "", y = value, fill = group)) +
+  geom_bar(stat = "identity", width = 1) +
+  coord_polar(theta = "y") +
+  labs(title = "Gráfica de pastel", x = NULL, y = NULL) +
+  theme_void() + scale_fill_manual(values = colores[1:4])
+
+p1 <- pie
+p2 <- pie + scale_fill_manual(values = rev(colores[1:4]))
+p3 <- pie + scale_fill_manual(values = colores[3:6])
+
+grid.arrange(p1, p2, p3, ncol = 3)
+
+```
+
+Al intentar comparar varias gráficas de pastel, se dificulta identificar qué grupo tiene el valor más alto o cómo evolucionan los valores entre grupos.
+
+## Mejor opción: Gráfica de barras
+
+```{r, echo=FALSE, message=FALSE, warning=FALSE}
+# Gráfica de barras
+library(ggplot2)
+library(dplyr)
+library(gridExtra)
+
+
+set.seed(123)
+data <- data.frame(
+  group = c("A", "B", "C", "D"),
+  value = c(30, 20, 25, 25)
+)
+
+bar1 <- ggplot(data, aes(x = group, y = value, fill = group)) +
+  geom_bar(stat = "identity") + theme_minimal() + scale_fill_manual(values = colores[1:4])
+
+bar2 <- ggplot(data, aes(x = group, y = value, fill = group)) +
+  geom_bar(stat = "identity") + theme_minimal() + scale_fill_manual(values = rev(colores[1:4]))
+
+bar3 <- ggplot(data, aes(x = reorder(group, value), y = value, fill = group)) +
+  geom_bar(stat = "identity") + theme_minimal() + scale_fill_manual(values = colores[3:6])
+
+grid.arrange(bar1, bar2, bar3, ncol = 3)
+
+```
+
+La gráfica de barras revela diferencias claras entre los grupos y permite detectar patrones fácilmente, algo que no se logra con las gráficas de pastel.
+
+### Errores comunes en gráficas de pastel:
+- Uso de gráficos en 3D
+- Leyendas separadas
+- Porcentajes que no suman 100%
+- Demasiados elementos
+- Gráficas explotadas
+
+*Este documento se basó en el artículo original: [The issue with pie chart - Data-to-Viz.com](https://www.data-to-viz.com/caveat/pie.html)**
+<br><br>
+
+<hr style="border: 3px solid#75124D;" />
+
+
+
+
 # Lecturas 
 
 - [Bunge, M. (2000). La Investigación científica su estrategia y su filosofía. Barcelona: S.XXI.](https://archive.org/details/BungeMarioLaInvestigacionCientificaSuEstrategiaYSuFilosofia)  
