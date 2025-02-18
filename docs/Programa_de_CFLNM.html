@@ -685,6 +685,50 @@ chart - Data-to-Viz.com</a>** <br><br></p>
 </div>
 </div>
 </div>
+<div id="colores" class="section level1">
+<h1>Colores</h1>
+<p>La elección del color es un factor crucial en la creación de gráficos
+efectivos. Un buen esquema de colores resalta la historia que los datos
+quieren contar, mientras que uno malo puede ocultarla o distraer.</p>
+<div id="tipos-de-paletas-de-color" class="section level2">
+<h2>Tipos de paletas de color</h2>
+<div id="paletas-cualitativas" class="section level3">
+<h3>Paletas cualitativas</h3>
+<p>Se utilizan para variables categóricas, donde cada categoría se
+representa con un color distinto. Ejemplo:</p>
+<p><img src="Programa_de_CFLNM_files/figure-html/unnamed-chunk-6-1.png" width="672" /></p>
+</div>
+<div id="paletas-secuenciales" class="section level3">
+<h3>Paletas secuenciales</h3>
+<p>Se usan para datos numéricos u ordenados, con colores que varían en
+intensidad.</p>
+</div>
+<div id="paletas-divergentes" class="section level3">
+<h3>Paletas divergentes</h3>
+<p>Se aplican cuando los valores numéricos tienen un punto central
+significativo, como el cero.</p>
+</div>
+</div>
+<div id="consejos-para-usar-colores" class="section level2">
+<h2>Consejos para usar colores</h2>
+<ul>
+<li><strong>Evita usar colores innecesarios:</strong> Usa color solo
+cuando sea necesario, como al representar una tercera variable.</li>
+<li><strong>Sé consistente:</strong> Mantén los mismos colores para las
+mismas categorías a lo largo de gráficos en un mismo reporte.</li>
+<li><strong>Aprovecha la semántica del color:</strong> Usa colores
+significativos (ej., rojo para pérdidas, verde para ganancias).</li>
+<li><strong>Considera la accesibilidad:</strong> Usa simuladores de
+daltonismo y ajusta luz y saturación para ayudar a todos los
+usuarios.</li>
+</ul>
+<hr />
+<p><em>Basado en el artículo original de Mike Yi publicado en
+Nightingale, revista de la Data Visualization Society.</em></p>
+<p><br><br></p>
+<hr style="border: 3px solid#75124D;" />
+</div>
+</div>
 <div id="lecturas" class="section level1">
 <h1>Lecturas</h1>
 <ul>
@@ -725,7 +769,7 @@ un histograma. Puedes hacer esto aquí mismo usando un bloque de código
 r, como este:</p>
 <pre class="r"><code>muestras &lt;- rnorm(100, mean=0, sd=1)
 hist(muestras)</code></pre>
-<p><img src="Programa_de_CFLNM_files/figure-html/unnamed-chunk-6-1.png" width="672" /></p>
+<p><img src="Programa_de_CFLNM_files/figure-html/unnamed-chunk-7-1.png" width="672" /></p>
 <!-- When you knit this R Markdown document, you will see that the histogram is printed to the page, along with the R code. This document can be set up to hide the R code in the webpage, just delete the comment (hashtag), from the cold folding option in the yaml header up top. For purposes of letting yourself see the code, and me see the code, best to keep it the way that it is. You learn all of these things and more can be customized in each R code block. -->
 <!-- # The big idea -->
 <!-- Use this lab journal to record what you do in R. This way I will be able to see what you are doing and help you along the way. You will also be creating a repository of all the things you do. You can make posts about everything. Learning specific things in R (project unrelated), and doing things for the project that we will discuss at the beginning of the Fall semester. You can get started now by fiddling around with googling things, and trying stuff out in R. I've placed some helpful starting links in the links page on this website -->

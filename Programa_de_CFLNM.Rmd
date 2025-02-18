@@ -421,6 +421,44 @@ La gráfica de barras revela diferencias claras entre los grupos y permite detec
 
 <hr style="border: 3px solid#75124D;" />
 
+# Colores
+La elección del color es un factor crucial en la creación de gráficos efectivos. Un buen esquema de colores resalta la historia que los datos quieren contar, mientras que uno malo puede ocultarla o distraer.
+
+## Tipos de paletas de color
+
+### Paletas cualitativas
+Se utilizan para variables categóricas, donde cada categoría se representa con un color distinto. Ejemplo:
+
+```{r, echo=FALSE, message=FALSE, warning=FALSE}
+library(ggplot2)
+df <- data.frame(categoria = c("A", "B", "C"), valor = c(10, 15, 7))
+ggplot(df, aes(x = categoria, y = valor, fill = categoria)) +
+  geom_bar(stat = "identity") +
+  scale_fill_manual(values = c("#F1B82D", "#1C5E90", "#87CEEB")) +
+  labs(title = "Paleta Cualitativa") +
+  theme_minimal()
+```
+
+### Paletas secuenciales
+Se usan para datos numéricos u ordenados, con colores que varían en intensidad.
+
+
+### Paletas divergentes
+Se aplican cuando los valores numéricos tienen un punto central significativo, como el cero. 
+
+
+## Consejos para usar colores
+- **Evita usar colores innecesarios:** Usa color solo cuando sea necesario, como al representar una tercera variable.
+- **Sé consistente:** Mantén los mismos colores para las mismas categorías a lo largo de gráficos en un mismo reporte.
+- **Aprovecha la semántica del color:** Usa colores significativos (ej., rojo para pérdidas, verde para ganancias).
+- **Considera la accesibilidad:** Usa simuladores de daltonismo y ajusta luz y saturación para ayudar a todos los usuarios.
+
+---
+*Basado en el artículo original de Mike Yi publicado en Nightingale, revista de la Data Visualization Society.*
+
+<br><br>
+
+<hr style="border: 3px solid#75124D;" />
 
 
 
