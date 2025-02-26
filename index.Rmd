@@ -253,7 +253,7 @@ Al unirte a esta plataforma, accedes a:
 - **Email:** [daniela.serrano@inegi.org.mx](mailto:daniela.serrano@inegi.org.mx) (por favor pon ‘HUB’ en el asunto)         
 
 <br>
-**Elaboró:** Dra. Daniela Serrano Campos      
+**Elaboró:** Dra. Daniela Serrano Campos & Beatriz Román   
 Última actualización: `r Sys.Date()`    
 
  
