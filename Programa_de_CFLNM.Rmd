@@ -235,6 +235,28 @@ ol li, ul li {
 
 <hr style="border: 3px solid#75124D;" />
 
+# **Resumen de ChartGuide-402**
+
+El **ChartGuide-402** es una guía para seleccionar y diseñar gráficos de manera efectiva. Propone elegir el tipo de gráfico según la naturaleza de los datos y el mensaje que se desea transmitir. Destaca buenas prácticas, como evitar gráficos 3D, reducir elementos innecesarios, usar colores con propósito y resaltar la información clave.
+
+Recomienda evitar escalas truncadas y múltiples ejes Y, ya que pueden distorsionar la interpretación. Sugiere emplear gráficos pequeños cuando se manejan más de cuatro series de datos y usar títulos descriptivos que faciliten la comprensión.
+
+Además, clasifica los gráficos en función de su propósito: comparación, distribución, relación, tendencia temporal y jerarquía. Entre los más recomendados están los de barras, líneas, dispersión y mapas de calor.
+
+En general, el documento enfatiza la importancia de la claridad visual y la eliminación de detalles superfluos para que los datos sean el centro de la interpretación.
+
+Recomendado por: Helena García
+Fuente:[Chart.Guide](https://chart.guide/wp-content/uploads/2019/10/ChartGuide-402-web.pdf)
+
+```{r, echo=FALSE, out.width="100%"}
+knitr::include_graphics("images/ChartGuide-402-web.png")
+
+```
+
+<br><br>
+
+<hr style="border: 3px solid#75124D;" />
+
 
 # ¿Qué es un gráfico de barras apiladas?
 
@@ -449,7 +471,7 @@ Se aplican cuando los valores numéricos tienen un punto central significativo, 
 
 ## Consejos para usar colores
 - **Evita usar colores innecesarios:** Usa color solo cuando sea necesario, como al representar una tercera variable.
-- **Sé consistente:** Mantén los mismos colores para las mismas categorías a lo largo de gráficos en un mismo reporte.
+- **Se consistente:** Mantén los mismos colores para las mismas categorías a lo largo de gráficos en un mismo reporte.
 - **Aprovecha la semántica del color:** Usa colores significativos (ej., rojo para pérdidas, verde para ganancias).
 - **Considera la accesibilidad:** Usa simuladores de daltonismo y ajusta luz y saturación para ayudar a todos los usuarios.
 
