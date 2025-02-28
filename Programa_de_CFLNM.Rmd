@@ -235,7 +235,7 @@ ol li, ul li {
 
 <hr style="border: 3px solid#75124D;" />
 
-# **Resumen de ChartGuide-402**
+# **Guía de gráficas**
 
 El **ChartGuide-402** es una guía para seleccionar y diseñar gráficos de manera efectiva. Propone elegir el tipo de gráfico según la naturaleza de los datos y el mensaje que se desea transmitir. Destaca buenas prácticas, como evitar gráficos 3D, reducir elementos innecesarios, usar colores con propósito y resaltar la información clave.
 
